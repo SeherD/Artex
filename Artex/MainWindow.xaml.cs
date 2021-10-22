@@ -37,5 +37,7 @@ namespace Artex
             Storyboard sb = Resources["OpenMenu"] as Storyboard;
             sb.Begin(LeftMenu);
         }
+
+     
     }
 }

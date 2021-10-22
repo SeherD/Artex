@@ -20,8 +20,8 @@
     <Grid>
 
 
-        <StackPanel Orientation="Horizontal" Margin="0,0,0,568" Background="Pink">
-            <Button x:Name="BackButton" Height ="50" Width="50" BorderThickness="0" Content="Back" ToolTip="Open Menu" Background ="HotPink" BorderBrush="Maroon" Margin="10,0,0,0"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,568" Background="#ffe6c3">
+            <Button x:Name="BackButton" Height ="50" Width="50" BorderThickness="0" Content="Back" ToolTip="Open Menu" Background ="#ffc0c0" BorderBrush="#643cff" Margin="10,0,0,0"/>
             <TextBlock x:Name = "Heading" FontSize="50" FontFamily="Impact" Width="395" Margin="420,25,25,0"><Run Text="ARTEX : Artist Name"/></TextBlock>
         </StackPanel>
 
@@ -29,15 +29,16 @@
         <StackPanel Panel.ZIndex="2" Name="LeftMenu" Orientation="Horizontal" Height="718" HorizontalAlignment="Right" Margin='0,0,-200,0'>
             <StackPanel Orientation="Vertical" Height="720">
                 <Grid Margin="0,35,10,0">
-                    <ToggleButton x:Name="Menu" Height="50" Width="50" BorderThickness="0" Checked="Open" Unchecked="Close" Content="Menu" ToolTip="Open Menu" Background ="HotPink" BorderBrush="Maroon" Margin="0,10,0,0"/>
+                    <ToggleButton x:Name="Menu" Height="50" Width="50" BorderThickness="0" Checked="Open" Unchecked="Close" Content="Menu" ToolTip="Open Menu" Background ="#ffc0c0" BorderBrush="#643cff" Margin="0,10,0,0"/>
                 </Grid>
             </StackPanel>
-            <Border BorderBrush="Lavender" BorderThickness="1" Width="200" Background="Pink" Height="720">
+            <Border BorderBrush="#643cff" BorderThickness="1" Width="200" Background="#ffe6c3" Height="720">
                 <StackPanel>
-                    <Button x:Name="Library" Height="35" VerticalAlignment="Top" Content="Library" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="DarkMagenta" Margin="0,-1,-1,0"  />
-                    <Button x:Name="Commisions" Height="35"  Content="Commisions" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="DarkMagenta" Margin="0,-1,-1,0"  />
-                    <Button x:Name="Shop" Height="35" Content="Shop" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="DarkMagenta" Margin="0,-1,-1,0"  />
-                    <Button x:Name="About" Height="35"  Content="About" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="DarkMagenta" Margin="0,-1,-1,0"  />
+
+                    <Button x:Name="Library" Height="35" VerticalAlignment="Top" Content="Library" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"/>
+                    <Button x:Name="Commisions" Height="35"  Content="Commisions" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
+                    <Button x:Name="Shop" Height="35" Content="Shop" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
+                    <Button x:Name="About" Height="35"  Content="About" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
                 </StackPanel>
 
             </Border>

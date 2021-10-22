@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\seher\\source\\repos\\Artex\\Artex\\Artex.csproj",
+      "projectUniqueName": "C:\\Users\\seher\\Documents\\Artex\\Artex\\Artex.csproj",
       "projectName": "Artex",
-      "projectPath": "C:\\Users\\seher\\source\\repos\\Artex\\Artex\\Artex.csproj",
+      "projectPath": "C:\\Users\\seher\\Documents\\Artex\\Artex\\Artex.csproj",
       "packagesPath": "C:\\Users\\seher\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\seher\\source\\repos\\Artex\\Artex\\obj\\",
+      "outputPath": "C:\\Users\\seher\\Documents\\Artex\\Artex\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\seher\\AppData\\Roaming\\NuGet\\NuGet.Config",
