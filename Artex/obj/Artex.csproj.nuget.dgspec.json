@@ -1,31 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seher\\Documents\\Artex\\Artex\\Artex.csproj": {}
+    "D:\\Documents\\DOCS\\Education\\University of Calgary\\2021\\2021fall\\CPSC 481\\Artex\\Artex\\Artex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seher\\Documents\\Artex\\Artex\\Artex.csproj": {
+    "D:\\Documents\\DOCS\\Education\\University of Calgary\\2021\\2021fall\\CPSC 481\\Artex\\Artex\\Artex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seher\\Documents\\Artex\\Artex\\Artex.csproj",
+        "projectUniqueName": "D:\\Documents\\DOCS\\Education\\University of Calgary\\2021\\2021fall\\CPSC 481\\Artex\\Artex\\Artex.csproj",
         "projectName": "Artex",
-        "projectPath": "C:\\Users\\seher\\Documents\\Artex\\Artex\\Artex.csproj",
-        "packagesPath": "C:\\Users\\seher\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seher\\Documents\\Artex\\Artex\\obj\\",
+        "projectPath": "D:\\Documents\\DOCS\\Education\\University of Calgary\\2021\\2021fall\\CPSC 481\\Artex\\Artex\\Artex.csproj",
+        "packagesPath": "C:\\Users\\ezraj\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\DOCS\\Education\\University of Calgary\\2021\\2021fall\\CPSC 481\\Artex\\Artex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\seher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ezraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net48"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {}
           }
         },
@@ -36,26 +36,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
         }
       }
     }
