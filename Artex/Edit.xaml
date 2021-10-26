@@ -1,0 +1,64 @@
+﻿<Window x:Class="Artex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Artex"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="718" Width="1278">
+    <Window.Resources>
+
+        <Storyboard x:Key="OpenMenu">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,-200,0" To="0,0,0,0" DecelerationRatio="0.9" Duration="0:0:0.5"/>
+        </Storyboard>
+
+
+        <Storyboard x:Key="CloseMenu">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="0,0,-200,0" DecelerationRatio="0.9" Duration="0:0:0.5"/>
+        </Storyboard>
+    </Window.Resources>
+    <Grid>
+
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,568" Background="#ffe6c3">
+            <Button x:Name="BackButton" Height ="50" Width="50" BorderThickness="0" Content="Back" ToolTip="Open Menu" Background ="#ffc0c0" BorderBrush="#643cff" Margin="10,0,0,0"/>
+            <TextBlock x:Name = "Heading" FontSize="50" FontFamily="Impact" Width="395" Margin="420,25,25,0"><Run Text="ARTEX : Artist Name"/></TextBlock>
+        </StackPanel>
+
+
+        <StackPanel Panel.ZIndex="2" Name="LeftMenu" Orientation="Horizontal" Height="718" HorizontalAlignment="Right" Margin='0,0,-200,0'>
+            <StackPanel Orientation="Vertical" Height="720">
+                <Grid Margin="0,35,10,0">
+                    <ToggleButton x:Name="Menu" Height="50" Width="50" BorderThickness="0" Checked="Open" Unchecked="Close" Content="Menu" ToolTip="Open Menu" Background ="#ffc0c0" BorderBrush="#643cff" Margin="0,10,0,0"/>
+                </Grid>
+            </StackPanel>
+            <Border BorderBrush="#643cff" BorderThickness="1" Width="200" Background="#ffe6c3" Height="720">
+                <StackPanel>
+
+                    <Button x:Name="Library" Height="35" VerticalAlignment="Top" Content="Library" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"/>
+                    <Button x:Name="Commisions" Height="35"  Content="Commisions" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
+                    <Button x:Name="Shop" Height="35" Content="Shop" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
+                    <Button x:Name="About" Height="35"  Content="About" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
+                </StackPanel>
+
+            </Border>
+
+
+        </StackPanel>
+        <TextBlock x:Name = "PageName" FontSize="40"  FontFamily="Impact" Margin="20,148,1086,493"><Run Language="fr-ca" Text="Edit Info"/></TextBlock>
+
+        <Button Command="{Binding Path=DisplayProductCommand}" Margin="159,258,698,90" >
+            <Image x:Name="Form" Source="\Assets\Form.png" Height="334" Width="297">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
+        </Button>
+        <TextBlock x:Name = "OptionForm" FontSize="30"  FontFamily="Impact" Margin="159,216,1050,451" Text="Form"/>
+        <TextBlock x:Name = "OptionForm_Copy" FontSize="30"  FontFamily="Impact" Margin="761,216,400,451" Text="Requests"/>
+        <Button Command="{Binding DisplayProductCommand}" Margin="761,258,96,90" >
+            <Image x:Name="Bell" Source="/Assets/Bell.png" Height="274" Width="239"/>
+        </Button>
+
+    </Grid>
+</Window>

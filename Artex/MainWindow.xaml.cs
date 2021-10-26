@@ -26,6 +26,7 @@ namespace Artex
             InitializeComponent();
            // btnshow.Click += Btnshow_Click;
            // btnclose.Click += Btnclose_Click;
+
         }
         private void Close(object sender, RoutedEventArgs e)
         {
