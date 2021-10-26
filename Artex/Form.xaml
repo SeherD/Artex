@@ -45,5 +45,10 @@
 
 
         </StackPanel>
+        <TextBlock x:Name = "PageName" FontSize="40"  FontFamily="Impact" Margin="20,148,910,505"><Run Language="fr-ca" Text="Contact Information"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="585,339,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="585,362,0,0" TextWrapping="Wrap" Text="Type of Commission" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="585,385,0,0" TextWrapping="Wrap" Text="Brief Description of Commission" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="585,424,0,0" TextWrapping="Wrap" Text="Reference Images" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
     </Grid>
 </Window>

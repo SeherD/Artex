@@ -38,6 +38,9 @@ namespace Artex
             sb.Begin(LeftMenu);
         }
 
-     
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
