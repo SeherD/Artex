@@ -19,9 +19,9 @@ namespace Artex
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Form : Window
     {
-        public MainWindow()
+        public Form()
         {
             InitializeComponent();
            // btnshow.Click += Btnshow_Click;
@@ -30,12 +30,12 @@ namespace Artex
         private void Close(object sender, RoutedEventArgs e)
         {
             Storyboard sb = Resources["CloseMenu"] as Storyboard;
-            sb.Begin(LeftMenu);
+            sb.Begin(FormLeftMenu);
         }
         private void Open(object sender, RoutedEventArgs e)
         {
             Storyboard sb = Resources["OpenMenu"] as Storyboard;
-            sb.Begin(LeftMenu);
+            sb.Begin(FormLeftMenu);
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

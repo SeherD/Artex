@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\ezraj\\.nuget\\packages\\",
         "outputPath": "D:\\Documents\\DOCS\\Education\\University of Calgary\\2021\\2021fall\\CPSC 481\\Artex\\Artex\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\ezraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -21,7 +21,7 @@
 
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,568" Background="#ffe6c3">
-            <Button x:Name="BackButton" Height ="50" Width="50" BorderThickness="0" Content="Back" ToolTip="Open Menu" Background ="#ffc0c0" BorderBrush="#643cff" Margin="10,0,0,0"/>
+            <Button x:Name="MainBackButton" Height ="50" Width="50" BorderThickness="0" Content="Back" ToolTip="Open Menu" Background ="#ffc0c0" BorderBrush="#643cff" Margin="10,0,0,0"/>
             <TextBlock x:Name = "Heading" FontSize="50" FontFamily="Impact" Width="395" Margin="420,25,25,0"><Run Text="ARTEX : Artist Name"/></TextBlock>
         </StackPanel>
 
@@ -33,8 +33,8 @@
                 </Grid>
             </StackPanel>
             <Border BorderBrush="#643cff" BorderThickness="1" Width="200" Background="#ffe6c3" Height="720">
+                
                 <StackPanel>
-
                     <Button x:Name="Library" Height="35" VerticalAlignment="Top" Content="Library" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"/>
                     <Button x:Name="Commisions" Height="35"  Content="Commisions" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
                     <Button x:Name="Shop" Height="35" Content="Shop" FontWeight="SemiBold" HorizontalContentAlignment="Left" Background ="#ffc0c0" Margin="0,-1,-1,0"  />
