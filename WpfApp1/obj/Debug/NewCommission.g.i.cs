@@ -40,22 +40,6 @@ namespace WpfApp1 {
     /// </summary>
     public partial class NewCommission : System.Windows.Controls.Page, System.Windows.Markup.IComponentConnector {
         
-        
-        #line 10 "..\..\NewCommission.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock CompanyName;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 11 "..\..\NewCommission.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock ArtistName;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -84,55 +68,6 @@ namespace WpfApp1 {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
-            switch (connectionId)
-            {
-            case 1:
-            this.CompanyName = ((System.Windows.Controls.TextBlock)(target));
-            return;
-            case 2:
-            this.ArtistName = ((System.Windows.Controls.TextBlock)(target));
-            return;
-            case 3:
-            
-            #line 17 "..\..\NewCommission.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 4:
-            
-            #line 19 "..\..\NewCommission.xaml"
-            ((System.Windows.Controls.TextBox)(target)).TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.TextBox_TextChanged);
-            
-            #line default
-            #line hidden
-            return;
-            case 5:
-            
-            #line 20 "..\..\NewCommission.xaml"
-            ((System.Windows.Controls.ListBox)(target)).SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.ListBox_SelectionChanged);
-            
-            #line default
-            #line hidden
-            return;
-            case 6:
-            
-            #line 21 "..\..\NewCommission.xaml"
-            ((System.Windows.Controls.ListBoxItem)(target)).Selected += new System.Windows.RoutedEventHandler(this.ListBoxItem_Selected);
-            
-            #line default
-            #line hidden
-            return;
-            case 7:
-            
-            #line 26 "..\..\NewCommission.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.SubmitButtonClick);
-            
-            #line default
-            #line hidden
-            return;
-            }
             this._contentLoaded = true;
         }
     }

@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="testWindow" Height="900" Width="1278">
     <Grid>
-        <Frame Name="WindowContent" NavigationUIVisibility="Hidden" Source="CommissionProgress.xaml" Height="560" Width="1278" Margin="0,180,0,0" ></Frame>
+        <Frame Name="WindowContent" NavigationUIVisibility="Hidden" Source="Comissions.xaml" Height="560" Width="1278" Margin="0,180,0,0" ></Frame>
     </Grid>
 </Window>
