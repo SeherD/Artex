@@ -63,6 +63,12 @@ namespace Shop
            // EditShop.Background = (Brush)bc.ConvertFrom("#ffc0c0");
         }
 
-       
+        private void Commissions_Click(object sender, RoutedEventArgs e)
+        {
+            WindowContent.Navigate(new System.Uri("CommissionProgress.xaml",
+             UriKind.RelativeOrAbsolute));
+            Heading.Text = "Commissions";
+
+        }
     }
 }

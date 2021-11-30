@@ -17,6 +17,7 @@
     <None Remove="Images\menu.png" />
     <None Remove="Images\profile.png" />
     <None Remove="Images\right.jpg" />
+    <None Remove="Images\searchIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +49,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\right.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\searchIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

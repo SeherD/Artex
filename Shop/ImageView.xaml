@@ -20,7 +20,7 @@
 
                 <StackPanel Orientation="Vertical" Margin="0,20,0,0">
                     <TextBlock FontSize="20"  FontFamily="Impact"  Margin=" 3,0,0,0" ><Run Text="Tags:"/></TextBlock>
-                    <ScrollViewer  VerticalScrollBarVisibility="Auto" Height="150">
+                    <ScrollViewer  VerticalScrollBarVisibility="Auto" Height="150" Margin="10,0,0,0">
                         <StackPanel Background="#ffe6c3">
                             <CheckBox FontSize="20" Content="Pencil Shading" />
                             <CheckBox FontSize="20" Content="Watercolors"/>
@@ -35,86 +35,300 @@
                     </ScrollViewer>
 
                 </StackPanel>
-                <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
+                <StackPanel Orientation="Vertical" Margin="0,20,0,0">
+                    <Button Content="Upload Images" FontSize="20" Margin="20"/>
+                    <Button Content="Add to Shop" FontSize="20" Margin="20"/>
+
+                </StackPanel>
+                           
 
 
             </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal">
-                    <StackPanel Orientation="Horizontal" Margin="300,0,0,0">
-                        <TextBlock FontSize="20" FontFamily="Impact"  Margin=" 3,0,0,0" ><Run Text="Search Images"/></TextBlock>
-                        <TextBox Width="159" Margin="10,3,0,0"/>
+            
 
-                    </StackPanel>
-                    <Button Content="Upload Images" HorizontalAlignment="Right" Margin="300,0,0,0"></Button>
-                </StackPanel>
-                <StackPanel Margin="20">
+
+            <StackPanel Orientation="Vertical">
+                
+                    <StackPanel Margin="10">
+                                  
                     <TextBlock FontSize="20" FontFamily="Impact"  Margin=" 0,0,0,0" ><Run Text="Images"/></TextBlock>
-                    <ScrollViewer  VerticalScrollBarVisibility="Auto" Width="1000" Height="250">
-                <Grid Height="400" >
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*" />
-                            <ColumnDefinition Width="1*" />
-                            <ColumnDefinition Width="1*" />
-                            <ColumnDefinition Width="1*" />
-                            <ColumnDefinition Width="1*" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                        </Grid.RowDefinitions>
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="0" Grid.Row="0" />
-                        <Image Source="/Images/art2.jpg" Height="100" Grid.Column="1" Grid.Row="0" />
-                        <Image Source="/Images/art2.jpg" Height="100" Grid.Column="2" Grid.Row="0" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="3" Grid.Row="0" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="4" Grid.Row="0" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="0" Grid.Row="1" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="1" Grid.Row="1" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="2" Grid.Row="1" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="3" Grid.Row="1" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="4" Grid.Row="1" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="0" Grid.Row="2" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="1" Grid.Row="2" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="2" Grid.Row="2" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="3" Grid.Row="2" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="4" Grid.Row="2" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="0" Grid.Row="3" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="1" Grid.Row="3" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="2" Grid.Row="3" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="3" Grid.Row="3" />
-                        <Image Source="/Images/art1.jpg" Height="100" Grid.Column="4" Grid.Row="3" />
-                       
-                    </Grid>
-            </ScrollViewer>
+                    
+                        <ScrollViewer  VerticalScrollBarVisibility="Auto" Width="1000" Height="300">
+                        <ListBox  SelectionMode="Extended" Background="Transparent" Width="900" MouseMove="List_MouseMove" MouseDown="List_MouseDown">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid  Rows="10" Columns="5" />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="Margin" Value="15"/>
+                                   
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                            
+                   
+                    </ScrollViewer>
+                    
                 </StackPanel>
-                <StackPanel Margin="10" Height="150">
+                <StackPanel Margin="10,0,0,0" Height="150">
                     <TextBlock FontSize="20" FontFamily="Impact"  Margin=" 0,0,0,0" ><Run Text="Folders"/></TextBlock>
-                <ScrollViewer  HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Disabled" Width="1000" Height="100">
+                <ScrollViewer  HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Disabled" Width="1000" Height="110">
                     <StackPanel Height="100" Orientation="Horizontal">
-                        <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                        <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                            <Image Source="/Images/folder.png" Height="70" Margin="10" />
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
-                            <Image Source="/Images/folder.png" Height="70" Margin="10"/>
+
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+                            <StackPanel>
+                                <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
+                                <TextBlock>Folder Name</TextBlock>
+                            </StackPanel>
+
+
 
                         </StackPanel>
                 </ScrollViewer>
                 </StackPanel>
             </StackPanel>
+           
         </StackPanel>
     </Grid>
 </Page>

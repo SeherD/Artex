@@ -40,7 +40,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,0,0,0">
                     <Button x:Name="Library" Content="Library" FontSize="20" Background="#ffe6c3" Margin="10,0,10,0" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Library_Click" ></Button>
-                    <Button x:Name="Commissions" Content="Commissions" FontSize="20" Background="#ffe6c3" Margin="10,0,10,0" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" ></Button>
+                    <Button x:Name="Commissions" Content="Commissions" FontSize="20" Background="#ffe6c3" Margin="10,0,10,0" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Commissions_Click" ></Button>
                     <Button x:Name ="EditShop" Content="Edit Shop" FontSize="20" Background="#ffe6c3" Margin="10,0,10,0" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="EditShop_Click"></Button>
                     <Button x:Name ="Sales" Content="Sales" FontSize="20" Background="#ffe6c3" Margin="10,0,10,0" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="Sales_Click" ></Button>
                 </StackPanel>
