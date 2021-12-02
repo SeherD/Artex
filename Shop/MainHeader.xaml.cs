@@ -65,8 +65,7 @@ namespace Shop
 
         private void Commissions_Click(object sender, RoutedEventArgs e)
         {
-            WindowContent.Navigate(new System.Uri("CommissionProgress.xaml",
-             UriKind.RelativeOrAbsolute));
+            WindowContent.Navigate(new CommissionProgress(this));
             Heading.Text = "Commissions";
 
         }

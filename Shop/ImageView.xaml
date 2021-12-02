@@ -68,7 +68,7 @@
                             </ListBox.ItemContainerStyle>
                             <ListBoxItem>
                                 <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <Image Source="/Images/art1.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
@@ -82,14 +82,14 @@
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <Image Source="/Images/art3.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <Image Source="/Images/art1.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
@@ -104,7 +104,7 @@
 
                             <ListBoxItem>
                                 <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                                    <Image Source="/Images/art3.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
@@ -251,9 +251,10 @@
                 <StackPanel Margin="10,0,0,0" Height="150">
                     <TextBlock FontSize="20" FontFamily="Impact"  Margin=" 0,0,0,0" ><Run Text="Folders"/></TextBlock>
                 <ScrollViewer  HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Disabled" Width="1000" Height="110">
-                    <StackPanel Height="100" Orientation="Horizontal">
+                        
+                            <StackPanel   Height="100" Orientation="Horizontal">
 
-                            <StackPanel>
+                            <StackPanel >
                                 <Image Source="/Images/folder.png" Height="50" Margin="10"  AllowDrop="True" Drop="image_Drop" />
                                 <TextBlock>Folder Name</TextBlock>
                             </StackPanel>
@@ -324,8 +325,10 @@
 
 
 
-                        </StackPanel>
-                </ScrollViewer>
+                            </StackPanel>
+                           
+
+                    </ScrollViewer>
                 </StackPanel>
             </StackPanel>
            

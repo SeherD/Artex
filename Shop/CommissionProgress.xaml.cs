@@ -18,33 +18,54 @@ namespace Shop
     /// </summary>
     public partial class CommissionProgress : Page
     {
-        public CommissionProgress()
+        Window MainWindow;
+        public CommissionProgress(Window Parent)
         {
+            MainWindow = Parent;
             InitializeComponent();
         }
 
-        public void CompleteForm_Click(object sender, RoutedEventArgs e)
+        private void CommissionSearch(object sender, TextChangedEventArgs e)
+        {
+            if (SearchBox.Text.Contains("9") || SearchBox.Text.Contains("W") || SearchBox.Text.Contains("T"))
+            {
+                grid1.Visibility = Visibility.Hidden;
+                grid2.Visibility = Visibility.Visible;
+                grid3.Visibility = Visibility.Hidden;
+            }
+            else if (SearchBox.Text.Contains("8") || SearchBox.Text.Contains("S") || SearchBox.Text.Contains("J"))
+            {
+                grid1.Visibility = Visibility.Hidden;
+                grid2.Visibility = Visibility.Hidden;
+                grid3.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                grid1.Visibility = Visibility.Visible;
+                grid2.Visibility = Visibility.Hidden;
+                grid3.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void CommissionStatusChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
-        public void AddNewCommission_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void AddNewCommission_Click(object sender, RoutedEventArgs e)
+        {
+            //MainWindow.Navigate(new System.Uri("NewCommission.xaml",UriKind.RelativeOrAbsolute), MainWindow);
+            this.NavigationService.Navigate(new NewCommission(MainWindow));
+           
         }
 
-        public void CommissionSearch(object sender, TextChangedEventArgs args)
+        private void CompleteForm_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new NewCommission(MainWindow));
+            //Page FormPage = new NewCommission2(MainWindow);
+            //this.Content = FormPage;
         }
 
-        public void CommissionStatusChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        public void ListBoxItem_Selected(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
+
 }
