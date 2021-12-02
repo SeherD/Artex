@@ -11,21 +11,21 @@
     <Grid Background="#ffe6c3">
         <TextBlock x:Name = "CompanyName" FontSize="30" FontFamily="Impact" Margin="108,35,1072,610" Text="ARTEX"/>
         <TextBlock x:Name = "ArtistName" FontSize="30" FontFamily="Impact" Margin="1030,35,84,610" Text="Artist: Name"/>
-        <TextBlock FontFamily="Impact" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID: 0000000" VerticalAlignment="Top" Height="46" Width="214" Margin="29,25,0,0"/>
+        <TextBlock FontFamily="Impact" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID: 0000010" VerticalAlignment="Top" Height="46" Width="214" Margin="29,25,0,0"/>
         <TextBlock FontFamily="Impact" TextAlignment="Left"  FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Customer Name:" VerticalAlignment="Top" Height="46" Width="279" Margin="29,80,0,0"/>
         <TextBlock FontFamily="Impact" TextAlignment="Left"  FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="279" Margin="29,151,0,0" Text="Price:"/>
         <TextBlock FontFamily="Impact" TextAlignment="Left"  FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="66" Margin="483,151,0,0" Text="$"/>
         <TextBlock FontFamily="Impact" TextAlignment="Left"  FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="279" Margin="29,220,0,0" Text="Payment Received:"/>
         <Button Background="#71a18c" Foreground="#ffe6c3" FontFamily="Impact" Content="Attach Commission Details Form" FontSize="30" HorizontalAlignment="Left" Margin="29,409,0,0" VerticalAlignment="Top" Width="596" Height="49" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" FontSize="30" Height="46" Margin="259,80,0,0" TextWrapping="Wrap" Text="Aaron Carr" VerticalAlignment="Top" Width="366" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" FontSize="30" Height="46" Margin="109,150,0,0" TextWrapping="Wrap" Text="40.00" VerticalAlignment="Top" Width="366" TextChanged="TextBox_TextChanged"/>
-        <ListBox HorizontalAlignment="Right" Height="48" Margin="0,216,688,0" VerticalAlignment="Top" TextElement.FontSize="30" Width="298" SelectionChanged="ListBox_SelectionChanged">
-            <ListBoxItem HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="110" Content="No"/>
-            <ListBoxItem HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="110" Content="Yes"/>
-            <ListBoxItem HorizontalAlignment="Center" HorizontalContentAlignment="Center" Selected="ListBoxItem_Selected" Width="110" Content="Waiting on Payment"/>
-        </ListBox>
+        <TextBox HorizontalAlignment="Left" FontSize="30" Height="46" Margin="259,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" FontSize="30" Height="46" Margin="109,150,0,0" TextWrapping="Wrap" Text="00.00" VerticalAlignment="Top" Width="366" TextChanged="TextBox_TextChanged"/>
+        <ComboBox HorizontalAlignment="Right" Height="48" Margin="0,216,688,0" VerticalAlignment="Top" TextElement.FontSize="30" Width="298" SelectedIndex="0">
+            <ComboBoxItem HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="110" Content="No"/>
+            <ComboBoxItem HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="110" Content="Yes"/>
+            <ComboBoxItem HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="110" Content="Waiting on Payment"/>
+        </ComboBox>
         <TextBlock FontFamily="Impact" TextAlignment="Left"  FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="339" Margin="29,285,0,0" Text="Commission Description:"/>
-        <TextBox HorizontalAlignment="Left" FontSize="30" Height="104" Margin="355,284,0,0" TextWrapping="Wrap" Text="Water-colour painting with a puppy" VerticalAlignment="Top" Width="753" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox HorizontalAlignment="Left" FontSize="30" Height="104" Margin="355,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="753" TextChanged="TextBox_TextChanged_1"/>
         <Button FontFamily="Impact" FontSize="30" Content="Submit" HorizontalAlignment="Left" Margin="1054,484,0,0" VerticalAlignment="Top" Width="179" Height="48" Background="#ffc0c0" Click="SubmitButtonClick"/>
 
     </Grid>

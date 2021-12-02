@@ -20,8 +20,10 @@ namespace WpfApp1
     /// </summary>
     public partial class NewCommission2 : Page
     {
-        public NewCommission2()
+        Frame MainWindow;
+        public NewCommission2(Frame Parent)
         {
+            MainWindow = Parent;
             InitializeComponent();
         }
 

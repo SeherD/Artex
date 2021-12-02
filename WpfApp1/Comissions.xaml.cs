@@ -20,14 +20,35 @@ namespace WpfApp1
     /// </summary>
     public partial class Comissions : Page
     {
-        public Comissions()
+
+        Frame MainWindow;
+
+        public Comissions(Frame Parent)
         {
+            MainWindow = Parent;
             InitializeComponent();
         }
 
         private void CommissionSearch(object sender, TextChangedEventArgs e)
         {
-
+            if (SearchBox.Text.Contains("9") || SearchBox.Text.Contains("W") || SearchBox.Text.Contains("T"))
+            {
+                grid1.Visibility = Visibility.Hidden;
+                grid2.Visibility = Visibility.Visible;
+                grid3.Visibility = Visibility.Hidden;
+            }
+            else if (SearchBox.Text.Contains("8") || SearchBox.Text.Contains("S") || SearchBox.Text.Contains("J"))
+            {
+                grid1.Visibility = Visibility.Hidden;
+                grid2.Visibility = Visibility.Hidden;
+                grid3.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                grid1.Visibility = Visibility.Visible;
+                grid2.Visibility = Visibility.Hidden;
+                grid3.Visibility = Visibility.Hidden;
+            }
         }
 
         private void CommissionStatusChanged(object sender, SelectionChangedEventArgs e)
@@ -37,22 +58,15 @@ namespace WpfApp1
 
         private void AddNewCommission_Click(object sender, RoutedEventArgs e)
         {
-
+            Page AddCom = new NewCommission2(MainWindow);
+            this.Content = AddCom;
         }
 
         private void CompleteForm_Click(object sender, RoutedEventArgs e)
         {
-
+            //Page FormPage = new NewCommission2(MainWindow);
+            //this.Content = FormPage;
         }
 
-        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
