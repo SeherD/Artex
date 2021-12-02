@@ -1,0 +1,40 @@
+﻿<Page x:Class="Artex.SignUpWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Artex"
+      mc:Ignorable="d" 
+      Title="SignUpWindow" Height="670" Width="1278">
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Hyperlink">
+                <Setter Property="TextBlock.TextDecorations" Value="{x:Null}"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ffe6c3" Offset="0.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+       
+        <TextBlock  TextAlignment="Center" 
+                   VerticalAlignment="Top" FontSize="100" Margin="0,50,0,0" Foreground="Black"><Run  Text="Which are you?"/></TextBlock>
+        <TextBlock  TextAlignment="Center" 
+                   FontSize="40" Foreground="Black" Height="76" Margin="351,280,10,280"><Run Text="Manage and sell your artworks"/></TextBlock>
+        <TextBlock  TextAlignment="Center" 
+                   FontSize="40" Foreground="Black" Height="76" Margin="351,460,140,0"><Run Text="View and buy artworks"/></TextBlock>
+
+
+        <StackPanel Orientation="Vertical">
+            <Button Content="Artist" Width="300" Height="160"
+                    x:Name="btn_login"  Margin="-700,250,0,0" Foreground="Black" FontSize="40" Background="#ffc0c0" RenderTransformOrigin="50,0.528" Click="Artist_Click"/>
+
+            <Button Content="Viewer" Width="300" Height="160"
+                    x:Name="btn_signUp"  Margin="-700,70,0,0" Foreground="Black" FontSize="40" Background="#ffc0c0" Click="Viewer_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
