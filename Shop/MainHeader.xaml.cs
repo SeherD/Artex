@@ -30,7 +30,16 @@ namespace Shop
             else if (ProfileOptions.Visibility == Visibility.Hidden)
                 ProfileOptions.Visibility = Visibility.Visible;
         }
+        private void Library_Click(object sender, RoutedEventArgs e)
+        {
 
+
+            WindowContent.Navigate(new System.Uri("ImageView.xaml",
+             UriKind.RelativeOrAbsolute));
+            Heading.Text = "Library";
+            //BrushConverter bc = new BrushConverter();
+            // Sales.Background =  (Brush)bc.ConvertFrom("#ffc0c0");
+        }
         private void Sales_Click(object sender, RoutedEventArgs e)
         {
            
@@ -52,6 +61,13 @@ namespace Shop
             
            // BrushConverter bc = new BrushConverter();
            // EditShop.Background = (Brush)bc.ConvertFrom("#ffc0c0");
+        }
+
+        private void Commissions_Click(object sender, RoutedEventArgs e)
+        {
+            WindowContent.Navigate(new CommissionProgress(this));
+            Heading.Text = "Commissions";
+
         }
     }
 }
