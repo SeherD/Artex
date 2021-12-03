@@ -61,7 +61,7 @@ namespace Shop
 
         private void CompleteForm_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new NewCommission(MainWindow));
+            this.NavigationService.Navigate(new Form());
             //Page FormPage = new NewCommission2(MainWindow);
             //this.Content = FormPage;
         }
