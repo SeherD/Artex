@@ -15,6 +15,7 @@
     <None Remove="Images\folder.png" />
     <None Remove="Images\left.jpg" />
     <None Remove="Images\menu.png" />
+    <None Remove="Images\plus.png" />
     <None Remove="Images\profile.png" />
     <None Remove="Images\right.jpg" />
     <None Remove="Images\searchIcon.png" />
@@ -43,6 +44,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\plus.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\profile.png">
