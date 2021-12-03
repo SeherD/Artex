@@ -18,7 +18,7 @@ namespace Artex
     /// </summary>
     public partial class LoginWindow : Page
     {
-        Window Login;
+       
         public LoginWindow()
         {
             

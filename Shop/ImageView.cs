@@ -67,8 +67,8 @@ namespace Shop
         }
 
         #endregion
-        static System.Collections.IList _data;
-        static ItemsControl _targetSource;
+        static System.Collections.IList _data= DefaultFolder._data;
+        static ItemsControl _targetSource= DefaultFolder._targetSource;
       
 
         private void image_Drop(object sender, DragEventArgs e)
@@ -94,10 +94,140 @@ namespace Shop
 
 
 
-        }
-    }
 
-    
-        
+        }
+
+        private void shop_Drop(object sender, DragEventArgs e)
+        {
+            List<ListBoxItem> selected = new List<ListBoxItem>();
+
+            foreach (ListBoxItem data in _targetSource.Items)
+            {
+                if (data.IsSelected == true)
+                {
+                    selected.Add(data);
+                }
+            }
+            //control.Items.Add(e.Data);
+            foreach (var data in selected)
+            {
+                /*if (data is UIElement element)
+                {
+                    element.Visibility = Visibility.Hidden;
+                }*/
+                _targetSource.Items.Remove(data);
+                DragTarget.Items.Add(data);
+            }
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            List<ListBoxItem> selected = new List<ListBoxItem>();
+            System.Collections.IList newList ;
+            newList=DragTarget.Items;
+           for (int i=newList.Count -1; i>=0;i-- )
+            {
+                var data = newList[i];
+                DragTarget.Items.RemoveAt(i);
+                _targetSource.Items.Add(data);
+                
+            }
+           
+           
+        }
+        private void AddNewFolder(object sender, RoutedEventArgs e)
+        {
+            string folderName="New Folder";
+            var dialog = new AddFolder();
+            if (dialog.ShowDialog() == true)
+            {
+                folderName= dialog.ResponseText;
+            }
+            else
+            {
+                return;
+            }
+            Button folder = new Button { Background = Brushes.White ,
+                Height = 70,
+                Width = 70,
+                AllowDrop = true,
+              
+                Margin = new Thickness(5, 5, 5, 5)
+
+
+        };
+            StackPanel internalPanel = new StackPanel();
+            Image folderImage = new Image
+            {
+                Source = new BitmapImage(new Uri("Images/folder.png", UriKind.Relative)),
+                Height = 30,
+            };
+
+            internalPanel.Children.Add(folderImage);
+            internalPanel.Children.Add(new TextBlock { Text=folderName });
+            folder.Drop += new DragEventHandler(image_Drop);
+            folder.Click += new RoutedEventHandler(FolderView);
+            folder.Content = internalPanel;
+            FolderHolder.Children.Add(folder);
+           
+
+        }
+
+        private void FolderView(object sender, RoutedEventArgs e)
+        {
+            if(sender.GetType().Name == "Button")
+            {
+                Button folder = (Button)sender;
+                StackPanel folderContent = (StackPanel)folder.Content;
+                foreach(var child in folderContent.Children)
+                {
+                    if (child.GetType().Name == "TextBlock")
+                    {
+                        TextBlock text = (TextBlock)child;
+                        FolderName.Text = text.Text;
+                        if (text.Text == "Default")
+                        {
+                            Default.Visibility = Visibility.Visible;
+                            OilPainting.Visibility = Visibility.Hidden;
+                            Watercolors.Visibility = Visibility.Hidden;
+
+                        }
+                        else if (text.Text == "Oil Paintings")
+                        {
+                            Default.Visibility = Visibility.Hidden;
+                            OilPainting.Visibility = Visibility.Visible;
+                            Watercolors.Visibility = Visibility.Hidden;
+                        }
+                        else if (text.Text == "Watercolors") {
+                            Default.Visibility = Visibility.Hidden;
+                            OilPainting.Visibility = Visibility.Hidden;
+                            Watercolors.Visibility = Visibility.Visible;
+                        }
+                    }
+                        
+                }
+
+               
+            }
+        }
+
+
+        private void AddShop_Click(object sender, RoutedEventArgs e)
+        {
+            DragBox.Visibility = Visibility.Visible;
+            FolderScroller.Visibility = Visibility.Collapsed;
+
+        }
+
+        private void Confirm_Click(object sender, RoutedEventArgs e)
+        {
+            DragBox.Visibility = Visibility.Collapsed;
+            FolderScroller.Visibility = Visibility.Visible;
+
+        }
+
+
+
     }
+  }
 

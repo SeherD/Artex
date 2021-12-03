@@ -69,5 +69,14 @@ namespace Shop
             Heading.Text = "Commissions";
 
         }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Logout successful!!");
+            Window Login = new Shop.LandingPage();
+            Login.Show();
+            Window ThisWindow = Window.GetWindow(this);
+            ThisWindow.Close();
+        }
     }
 }

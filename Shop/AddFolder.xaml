@@ -1,0 +1,21 @@
+﻿<Window x:Class="Shop.AddFolder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop"
+        mc:Ignorable="d"
+        Title="AddFolder" Height="150" Width="350">
+    <Grid>
+        <StackPanel Height="150" Width="350" >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  FontSize="20" FontFamily="Impact" Text="Enter Folder Name:" Margin="10,15,0,0" />
+            <TextBox Width ="150" FontSize="20" x:Name="ResponseTextBox" Margin="10,10,0,0"/>
+                </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Save Folder Name" Click="SaveButton_Click" Margin="30"/>
+                <Button Content="Cancel" Click="CancelButton_Click"  Margin="30"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
