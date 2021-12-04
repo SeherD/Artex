@@ -12,25 +12,25 @@
         <StackPanel Orientation="Horizontal">
             <StackPanel  x:Name="LefttMenu" Orientation="Vertical" Width="240"  Background="#ffe6c3" >
 
-                <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
-                    <TextBlock FontSize="20" FontFamily="Impact"  Margin=" 3,0,0,0" ><Run Text="Search"/></TextBlock>
-                    <TextBox Width="159" Margin="10,3,0,0"/>
+                <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                    <TextBlock FontSize="20" FontFamily="Impact"  Margin="4,4,0,0" ><Run Text="Search Title"/></TextBlock>
+                    <TextBox x:Name="SearchBox" FontSize="20"  Margin="4,4,0,0" Width="160" HorizontalAlignment="Left" TextChanged="search"/>
 
                 </StackPanel>
 
                 <StackPanel Orientation="Vertical" Margin="0,20,0,0">
                     <TextBlock FontSize="20"  FontFamily="Impact"  Margin=" 3,0,0,0" ><Run Text="Tags:"/></TextBlock>
                     <ScrollViewer  VerticalScrollBarVisibility="Auto" Height="150" Margin="10,0,0,0">
-                        <StackPanel Background="#ffe6c3">
-                            <CheckBox FontSize="20" Content="Pencil Shading" />
-                            <CheckBox FontSize="20" Content="Watercolors"/>
-                            <CheckBox FontSize="20" Content="Oil Paints"/>
-                            <CheckBox FontSize="20" Content="Gouache"/>
-                            <CheckBox FontSize="20" Content="Vibrant"/>
-                            <CheckBox FontSize="20" Content="GreyScale"/>
-                            <CheckBox FontSize="20" Content="Modern"/>
-                            <CheckBox FontSize="20" Content="Portrait"/>
-                            <CheckBox FontSize="20" Content="Still Life"/>
+                        <StackPanel x:Name="CheckboxHolder" Background="#ffe6c3">
+                            <CheckBox FontSize="20" Content="PencilShading" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="Watercolors" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="OilPainting" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="Gouache" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="Vibrant" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="GreyScale" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="Modern" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="Portrait" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked"/>
+                            <CheckBox FontSize="20" Content="StillLife" Checked="checkboxIsChecked" Unchecked="checkboxIsUnchecked" />
                         </StackPanel>
                     </ScrollViewer>
 
@@ -40,20 +40,20 @@
                     <Button Content="Add to Shop" FontSize="20" Margin="20" Click="AddShop_Click"/>
 
                 </StackPanel>
-                           
+
 
 
             </StackPanel>
-            
+
 
 
             <StackPanel Orientation="Vertical">
-                
-                    <StackPanel Margin="10">
-                                  
+
+                <StackPanel Margin="10">
+
                     <TextBlock FontSize="20" x:Name ="FolderName" FontFamily="Impact"  Margin=" 0,0,0,0" ><Run Text="Default"/></TextBlock>
                     <ScrollViewer x:Name="Default" VerticalScrollBarVisibility="Auto" Width="1000" Height="300" Visibility="Visible">
-                        <ListBox  SelectionMode="Extended" Background="Transparent" Width="900" MouseMove="List_MouseMove" MouseDown="List_MouseDown">
+                        <ListBox x:Name="ImageFolder" SelectionMode="Extended" Background="Transparent" Width="900" MouseMove="List_MouseMove" MouseDown="List_MouseDown">
                             <ListBox.ItemsPanel>
                                 <ItemsPanelTemplate>
                                     <UniformGrid  Rows="10" Columns="5" />
@@ -65,38 +65,46 @@
 
                                 </Style>
                             </ListBox.ItemContainerStyle>
-                            <ListBoxItem>
+                            <ListBoxItem RenderTransformOrigin="0.5,0.5">
+                                <ListBoxItem.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleY="-0.559"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform Y="0.74"/>
+                                    </TransformGroup>
+                                </ListBoxItem.RenderTransform>
                                 <StackPanel>
                                     <Image Source="/Images/art1.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Title: Five Star</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #pencilshading</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Five Eyes</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art3.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Title: Neverland</TextBlock>
+                                    <TextBlock FontSize="15">Tags: #watercolors</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art1.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Art </TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Color</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
@@ -104,98 +112,98 @@
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art3.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Interesting</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Eyes</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Dusk</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Dawn</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Sunset</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Sparkles</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Open Fields</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Sheep</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Birds</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Puppies</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Cartoons</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Flowers</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: Darkness</TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
+                                    <TextBlock FontSize="15">Title: </TextBlock>
                                     <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
@@ -245,14 +253,14 @@
 
 
                     </ScrollViewer>
-                   
+
 
                 </StackPanel>
                 <StackPanel x:Name="FolderScroller" Margin="10,0,0,0" Height="150"  Visibility="Visible">
                     <TextBlock FontSize="20" FontFamily="Impact"  Margin=" 0,0,0,0" ><Run Text="Folders"/></TextBlock>
-                <ScrollViewer   HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Disabled" Width="1000" Height="110">
-                        
-                            <StackPanel x:Name="FolderHolder"  Height="100" Orientation="Horizontal">
+                    <ScrollViewer   HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Disabled" Width="1000" Height="110">
+
+                        <StackPanel x:Name="FolderHolder"  Height="100" Orientation="Horizontal">
                             <Button Background="White" Height="70" Width="70" Margin="5" Click="AddNewFolder" >
                                 <StackPanel >
                                     <Image Source="/Images/plus.png" Height="30"  />
@@ -260,10 +268,10 @@
                                 </StackPanel>
                             </Button>
                             <Button  Background="White" Height="70"  Width="70" AllowDrop="True" Drop="image_Drop" Margin="5" Click="FolderView">
-                            <StackPanel >                                
-                                <Image Source="/Images/folder.png" Height="30"  />
-                                <TextBlock>Default</TextBlock>
-                            </StackPanel>
+                                <StackPanel >
+                                    <Image Source="/Images/folder.png" Height="30"  />
+                                    <TextBlock>Default</TextBlock>
+                                </StackPanel>
                             </Button>
                             <Button  Background="White" Height="70"  Width="70" AllowDrop="True" Drop="image_Drop" Margin="5" Click="FolderView">
                                 <StackPanel >
@@ -301,37 +309,37 @@
                                     <TextBlock>Oil Paintings</TextBlock>
                                 </StackPanel>
                             </Button>
-                           
-                                
+
+
 
 
 
 
 
                         </StackPanel>
-                           
+
 
                     </ScrollViewer>
                 </StackPanel>
                 <StackPanel x:Name="DragBox" Visibility="Hidden">
-                        <TextBlock  FontSize="20" FontFamily="Impact"  Margin=" 10,0,0,0" ><Run Text="Drag your images here to add to the Shop:"/></TextBlock>
+                    <TextBlock  FontSize="20" FontFamily="Impact"  Margin=" 10,0,0,0" ><Run Text="Drag your images here to add to the Shop:"/></TextBlock>
                     <StackPanel Orientation="Horizontal">
-                    <ListBox Margin="10,0,0,0" x:Name="DragTarget" Height="130" Width="800" BorderBrush="Green" BorderThickness="2" AllowDrop="True" Drop="shop_Drop">
-                        <ListBox.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <UniformGrid  Rows="5" Columns="4" />
-                            </ItemsPanelTemplate>
-                        </ListBox.ItemsPanel>
-                    </ListBox>
+                        <ListBox Margin="10,0,0,0" x:Name="DragTarget" Height="130" Width="800" BorderBrush="Green" BorderThickness="2" AllowDrop="True" Drop="shop_Drop">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid  Rows="5" Columns="4" />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                        </ListBox>
                         <Button Content="Confirm" Margin="20" FontFamily="impact" FontSize="20" Height="30" Background="LightGreen" Click="Confirm_Click"/>
                         <Button Content="Cancel" Margin="20" Height="30" FontFamily="impact" FontSize="20" Background="IndianRed" Click="Cancel_Click"/>
 
 
                     </StackPanel>
-                    </StackPanel>
                 </StackPanel>
-           
-           
+            </StackPanel>
+
+
         </StackPanel>
         <ScrollViewer x:Name="OilPainting"  VerticalScrollBarVisibility="Auto" Width="1000" Height="300" Margin="210,20,0,200" Visibility="Hidden" >
             <ListBox  SelectionMode="Extended" Background="Transparent" Width="900" MouseMove="List_MouseMove" MouseDown="List_MouseDown">
@@ -410,8 +418,8 @@
                         <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
-              
-                  
+
+
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
