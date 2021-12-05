@@ -13,11 +13,11 @@
 
             <TextBlock HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="Please fill out this form and submit:" FontSize="30" FontFamily="Impact" Background="#ffc0c0" VerticalAlignment="Top" Height="37" Width="435"/>
             <Label Content="Question 1: Briefly describe the piece you want" FontSize="20" FontFamily="Impact" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top"/>
-            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="Answer" VerticalAlignment="Top" Width="1113" Height="56"/>
+            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="I want a portrait drawing of Grogu from The Mandalorian. The link shows a landscape version of it, please make a portrait for this. Do not include any background." VerticalAlignment="Top" Width="1113" Height="56"/>
             <Label Content="Question 2: Specify the medium that you want" FontSize="20" FontFamily="Impact" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top"/>
-            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="Answer" VerticalAlignment="Top" Width="1113" Height="56"/>
+            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="You are free to decide what medium you'd like for this. Just decide whatever is best for this art piece." VerticalAlignment="Top" Width="1113" Height="56"/>
             <Label Content="Question 3: Copy and paste any image URLS of references that relate to your request" FontSize="20" FontFamily="Impact" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top"/>
-            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="Answer" VerticalAlignment="Top" Width="1113" Height="56"/>
+            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="https://imgr.search.brave.com/gNYPFDjngXloK3slgSArMQYRs0gd-qM-nF0iKLKvLRs/fit/1200/880/ce/1/aHR0cHM6Ly93cGNk/bi51cy1lYXN0LTEu/dmlwLnRuLWNsb3Vk/Lm5ldC93d3cuY2hh/bm5lbDMwMDAuY29t/L2NvbnRlbnQvdXBs/b2Fkcy8yMDIwLzAz/L0JhYnktWW9kYS5q/cGc" VerticalAlignment="Top" Width="1113" Height="56"/>
             <Button Content="Submit" FontSize="40" Foreground="#ffc9a6" FontFamily="Impact" Background ="#71a18c" HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" Height="81" Width="228"/>
         </StackPanel>
     </Grid>
