@@ -20,8 +20,8 @@
                  Name="txt_userName" FontSize="40" TextChanged="txt_userName_TextChanged"/>
         <TextBlock  TextAlignment="Center" 
                    FontSize="80" Foreground="Black" ><Run Text="Password:"/></TextBlock>
-        <TextBox  Height="80" Margin="158,0,158,0" FontSize="40" TextAlignment="Center" VerticalContentAlignment="Center"
-            x:Name="txt_password" TextChanged="txt_password_TextChanged"/>
+        <PasswordBox  Height="80" Margin="158,0,158,0" FontSize="40" VerticalContentAlignment="Center"
+            x:Name="txt_password" />
 
        
             <Button Content="Submit" Width="200" Height="100"

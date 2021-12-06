@@ -16,19 +16,20 @@
         <Grid x:Name="grid1" Visibility="Visible"  HorizontalAlignment="Left" Height="467" Margin="16,95,0,0" VerticalAlignment="Top" Width="1234">
             <Rectangle Fill="#fff4e6" HorizontalAlignment="Right" Height="472" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="1234"/>
             <ScrollViewer Margin="0,65,6,0">
-                <StackPanel HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="1202">
+                <StackPanel HorizontalAlignment="Left" Height="630" VerticalAlignment="Top" Width="1202">
                     <Grid Height="48">
-                        <Button Background="#ffc0c0" FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click"/>
+                        <Button Background="#ffc0c0" FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click1"/>
                         <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID: 0000000" VerticalAlignment="Top" Height="46" Width="214"/>
                         <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Aaron Carr" VerticalAlignment="Top" Height="46" Width="342" Margin="274,0,0,0"/>
-                        <ComboBox HorizontalAlignment="Right" Height="48" Margin="0,0,211,0" VerticalAlignment="Top" TextElement.FontSize="30" Width="304" SelectedIndex="2"  SelectionChanged="CommissionStatusChanged">
+                        <ComboBox x:Name="SalesTarget" HorizontalAlignment="Right" Height="48" Margin="0,0,211,0" VerticalAlignment="Top" TextElement.FontSize="30" Width="304" SelectedIndex="2"  SelectionChanged="CommissionStatusChanged">
                             <ComboBoxItem x:Name="waiting1" Width="279" Content="Waiting on Payment"/>
                             <ComboBoxItem Width="160" Content="Accepted"/>
                             <ComboBoxItem Width="162" Content="In Progress"/>
+                            <ComboBoxItem Width="162" Content="Sold"/>
                         </ComboBox>
                     </Grid>
                     <Grid Height="48">
-                        <Button Background="#ffc0c0" FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click"/>
+                        <Button Background="#ffc0c0" FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click2"/>
                         <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID: 0000001" VerticalAlignment="Top" Height="46" Width="214"/>
                         <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Marlene Camacho" VerticalAlignment="Top" Height="46" Width="340" Margin="275,0,0,0"/>
                         <ComboBox HorizontalAlignment="Right" Height="48" Margin="0,0,211,0" VerticalAlignment="Top" TextElement.FontSize="30" Width="304" SelectedIndex="1" SelectionChanged="CommissionStatusChanged">
@@ -38,7 +39,7 @@
                         </ComboBox>
                     </Grid>
                     <Grid Height="48">
-                        <Button Background="#ffc0c0" FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click"/>
+                        <Button Background="#ffc0c0" FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click3"/>
                         <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID: 0000002" VerticalAlignment="Top" Height="46" Width="214"/>
                         <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Oliver Dunlap" VerticalAlignment="Top" Height="46" Width="340" Margin="275,0,0,0"/>
                         <ComboBox HorizontalAlignment="Right" Height="48" Margin="0,0,211,0" VerticalAlignment="Top" TextElement.FontSize="30" SelectedIndex="1" Width="304" SelectionChanged="CommissionStatusChanged">
@@ -115,6 +116,26 @@
                             <ComboBoxItem Width="162" Content="In Progress"/>
                             <ComboBoxItem Width="154" Content="Accepted"/>
                             <ComboBoxItem Width="279" Content="Waiting on Payment"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid x:Name="commission1" Height="48" Visibility="Collapsed">
+                        <Button Background="#ffc0c0"  FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click"/>
+                        <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID: 0000010" VerticalAlignment="Top" Height="46" Width="214"/>
+                        <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="James Carr" VerticalAlignment="Top" Height="46" Width="342" Margin="274,0,0,0"/>
+                        <ComboBox HorizontalAlignment="Right" Height="48" Margin="0,0,211,0" VerticalAlignment="Top" TextElement.FontSize="30" Width="304" SelectedIndex="2"  SelectionChanged="CommissionStatusChanged">
+                            <ComboBoxItem Width="279" Content="Waiting on Payment"/>
+                            <ComboBoxItem Width="160" Content="Accepted"/>
+                            <ComboBoxItem Width="162" Content="In Progress"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid x:Name="commission2" Height="48" Visibility="Collapsed">
+                        <Button Background="#ffc0c0" FontFamily="Impact" FontSize="20" Content="Completed Form" HorizontalAlignment="Right" Margin="1022,0,0,0" VerticalAlignment="Top" Width="170" Height="46" Click="CompleteForm_Click"/>
+                        <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID: 0000011" VerticalAlignment="Top" Height="46" Width="214"/>
+                        <TextBlock TextAlignment="Center" FontSize="30" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Taylor Smith" VerticalAlignment="Top" Height="46" Width="342" Margin="274,0,0,0"/>
+                        <ComboBox HorizontalAlignment="Right" Height="48" Margin="0,0,211,0" VerticalAlignment="Top" TextElement.FontSize="30" Width="304" SelectedIndex="1"  SelectionChanged="CommissionStatusChanged">
+                            <ComboBoxItem Width="279" Content="Waiting on Payment"/>
+                            <ComboBoxItem Width="160" Content="Accepted"/>
+                            <ComboBoxItem Width="162" Content="In Progress"/>
                         </ComboBox>
                     </Grid>
                 </StackPanel>

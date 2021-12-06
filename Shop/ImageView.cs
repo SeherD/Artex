@@ -132,8 +132,11 @@ namespace Shop
                 _targetSource.Items.Add(data);
                 
             }
-           
-           
+
+            DragBox.Visibility = Visibility.Collapsed;
+            FolderScroller.Visibility = Visibility.Visible;
+
+
         }
         private void AddNewFolder(object sender, RoutedEventArgs e)
         {

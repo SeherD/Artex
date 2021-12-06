@@ -40,7 +40,7 @@ namespace Artex
             {
                 MessageBox.Show("Failed! Username already exist!!!");
             }
-            else if (this.txt_password.Text.ToString() != this.txt_confirmPassword.Text.ToString())
+            else if (this.txt_password.Password.ToString() != this.txt_confirmPassword.Password.ToString())
             {
                 MessageBox.Show("Failed! Passwords do not match!!! Try again");
             }

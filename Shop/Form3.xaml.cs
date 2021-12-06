@@ -14,24 +14,23 @@ using System.Windows.Shapes;
 namespace Shop
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Form.xaml
     /// </summary>
-    public partial class Sales : Page
+    
+    public partial class Form3 : Page
     {
+        Window MainWindow;
         MainHeader headerClass;
-        public Sales(MainHeader header)
+        public Form3(Window Parent, MainHeader header)
         {
+            MainWindow = Parent;
             headerClass = header;
             InitializeComponent();
-            if (header.saleMade1)
-            {
-                a.Visibility = Visibility.Visible;
-                b.Visibility = Visibility.Visible;
-                c.Visibility = Visibility.Visible;
-                d.Visibility = Visibility.Visible;
-                Chart.Source = new BitmapImage(new Uri("Images/graph2.png", UriKind.Relative));
-            }
-           
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new CommissionProgress(MainWindow, headerClass, false, false));
         }
     }
 }

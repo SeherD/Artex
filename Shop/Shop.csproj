@@ -13,6 +13,8 @@
     <None Remove="Images\bbutton.png" />
     <None Remove="Images\chart.png" />
     <None Remove="Images\folder.png" />
+    <None Remove="Images\graph1.png" />
+    <None Remove="Images\graph2.png" />
     <None Remove="Images\left.jpg" />
     <None Remove="Images\menu.png" />
     <None Remove="Images\plus.png" />
@@ -40,6 +42,12 @@
     <Resource Include="Images\folder.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\graph1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\graph2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\left.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -58,6 +66,33 @@
     <Resource Include="Images\searchIcon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Form3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Form2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Form1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Form3.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Form2.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Form1.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>
