@@ -132,8 +132,11 @@ namespace Shop
                 _targetSource.Items.Add(data);
                 
             }
-           
-           
+
+            DragBox.Visibility = Visibility.Collapsed;
+            FolderScroller.Visibility = Visibility.Visible;
+
+
         }
         private void AddNewFolder(object sender, RoutedEventArgs e)
         {
@@ -172,7 +175,193 @@ namespace Shop
            
 
         }
+        List<ListBoxItem> checkItems = new List<ListBoxItem>();
 
+        private void checkboxIsChecked(object sender, RoutedEventArgs e)
+        {  foreach(var check in CheckboxHolder.Children)
+            {
+                if (check.GetType().Name == "CheckBox")
+                {
+                    CheckBox checkbox = (CheckBox)check;
+                   if((bool)checkbox.IsChecked)
+                    {//checkbox.Content.ToString()
+                        foreach (var child in ImageFolder.Items)
+                        {
+                            if (child.GetType().Name == "ListBoxItem")
+                            {
+                                ListBoxItem list = (ListBoxItem)child;
+                                if (list.Content.GetType().Name == "StackPanel")
+                                {
+                                    StackPanel holder = (StackPanel)list.Content;
+                                    foreach (var text in holder.Children)
+                                    {
+
+                                        if (text.GetType().Name == "TextBlock")
+                                        {
+                                            TextBlock textHolder = (TextBlock)text;
+                                            if (textHolder.Text.Contains("Tags: #" + checkbox.Content.ToString().ToLower()))
+                                            {
+                                                checkItems.Add(list);
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            foreach (var x in ImageFolder.Items)
+            {
+                if (x.GetType().Name == "ListBoxItem")
+                {
+                    ListBoxItem list = (ListBoxItem)x;
+                    if (!checkItems.Contains(list))
+                    {
+                        list.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        list.Visibility = Visibility.Visible;
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+        private void checkboxIsUnchecked(object sender, RoutedEventArgs e)
+        { bool flag = false;
+            foreach (var check in CheckboxHolder.Children)
+            {
+                if (check.GetType().Name == "CheckBox")
+                {
+                    CheckBox checkbox = (CheckBox)check;
+                    if ((bool)checkbox.IsChecked) {
+                        flag = true;
+                    }
+
+                }
+
+            }
+            if (!flag)
+            {
+                foreach (var child in ImageFolder.Items)
+                {
+                    if (child.GetType().Name == "ListBoxItem")
+                    {
+
+                        ListBoxItem list = (ListBoxItem)child;
+                        list.Visibility = Visibility.Visible;
+                    }
+                }
+
+                checkItems.Clear();
+
+                return;
+            }
+
+
+             foreach (var check in CheckboxHolder.Children)
+            {
+                if (check.GetType().Name == "CheckBox")
+                {
+                    CheckBox checkbox = (CheckBox)check;
+                   if(!(bool)checkbox.IsChecked)
+                    {//checkbox.Content.ToString()
+                        foreach (var child in ImageFolder.Items)
+                        {
+                            if (child.GetType().Name == "ListBoxItem")
+                            {
+                                ListBoxItem list = (ListBoxItem)child;
+                                if (list.Content.GetType().Name == "StackPanel")
+                                {
+                                    StackPanel holder = (StackPanel)list.Content;
+                                    foreach (var text in holder.Children)
+                                    {
+
+                                        if (text.GetType().Name == "TextBlock")
+                                        {
+                                            TextBlock textHolder = (TextBlock)text;
+                                            if (textHolder.Text.Contains("Tags: #" + checkbox.Content.ToString().ToLower()))
+                                            { if (checkItems.Contains(list))
+                                                checkItems.Remove(list);
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            foreach (var x in ImageFolder.Items)
+            {
+                if (x.GetType().Name == "ListBoxItem")
+                {
+                    ListBoxItem list = (ListBoxItem)x;
+                    if (!checkItems.Contains(list))
+                    {
+                        list.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        list.Visibility = Visibility.Visible;
+                    }
+                }
+            }
+
+        }
+
+
+        private void search(object sender, TextChangedEventArgs args)
+        {
+            foreach (var x in ImageFolder.Items)
+            {
+                if (x.GetType().Name == "ListBoxItem")
+                {
+                    ListBoxItem list = (ListBoxItem)x;
+                    list.Visibility = Visibility.Collapsed;
+
+                }
+            }
+            foreach (var child in ImageFolder.Items)
+            {
+                if (child.GetType().Name == "ListBoxItem")
+                {
+                    ListBoxItem list = (ListBoxItem)child;
+                    if (list.Content.GetType().Name == "StackPanel")
+                    {
+                        StackPanel holder = (StackPanel)list.Content;
+                        foreach (var text in holder.Children)
+                        {
+
+                            if (text.GetType().Name == "TextBlock")
+                            {
+                                TextBlock textHolder = (TextBlock)text;
+                                if (textHolder.Text.Contains("Title: "+SearchBox.Text))
+                                {
+                                    list.Visibility = Visibility.Visible;
+                                }
+
+                                else
+                                {
+                                    //list.Visibility = Visibility.Collapsed;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         private void FolderView(object sender, RoutedEventArgs e)
         {
             if(sender.GetType().Name == "Button")

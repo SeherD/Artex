@@ -19,10 +19,37 @@ namespace Shop
     public partial class CommissionProgress : Page
     {
         Window MainWindow;
-        public CommissionProgress(Window Parent)
+        MainHeader headerClass;
+        bool showNewCommission1=false;
+        bool showNewCommission2 = false;
+
+
+
+        public CommissionProgress(Window Parent,MainHeader header, bool commissionsAdded1, bool commissionsAdded2)
         {
             MainWindow = Parent;
+            headerClass = header;
+            showNewCommission1 = commissionsAdded1;
+            showNewCommission2 = commissionsAdded2;
             InitializeComponent();
+
+            if (commissionsAdded1)
+            {
+
+                commission1.Visibility = Visibility.Visible;
+                
+            }
+        
+            if (commissionsAdded2)
+            {
+                 commission2.Visibility = Visibility.Visible;
+                    
+                }
+            if (header.saleMade1)
+            {
+                SalesTarget.SelectedIndex = 3;
+            }
+           
         }
 
         private void CommissionSearch(object sender, TextChangedEventArgs e)
@@ -49,19 +76,54 @@ namespace Shop
 
         private void CommissionStatusChanged(object sender, SelectionChangedEventArgs e)
         {
+            
+                if(SalesTarget.SelectedIndex == 3)
+                {
+                    headerClass.saleMade1 = true;
+                }
+                else
+                {
+                headerClass.saleMade2 = true;
+            }
+
+            
 
         }
-
+       
         private void AddNewCommission_Click(object sender, RoutedEventArgs e)
         {
-            //MainWindow.Navigate(new System.Uri("NewCommission.xaml",UriKind.RelativeOrAbsolute), MainWindow);
-            this.NavigationService.Navigate(new NewCommission(MainWindow));
-           
-        }
+            if (headerClass.countCommissions == 0)
+            {
+                this.NavigationService.Navigate(new NewCommission(MainWindow, headerClass, "0000010"));
+            }
+            else if (headerClass.countCommissions == 1)
+            {
+                this.NavigationService.Navigate(new NewCommission(MainWindow, headerClass,"0000011"));
+            }
 
+            headerClass.countCommissions++;
+        }
         private void CompleteForm_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Form());
+            this.NavigationService.Navigate(new Form(MainWindow, headerClass));
+            //Page FormPage = new NewCommission2(MainWindow);
+            //this.Content = FormPage;
+        }
+        private void CompleteForm_Click1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Form1(MainWindow, headerClass));
+            //Page FormPage = new NewCommission2(MainWindow);
+            //this.Content = FormPage;
+        }
+        private void CompleteForm_Click2(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Form2(MainWindow, headerClass));
+            //Page FormPage = new NewCommission2(MainWindow);
+            //this.Content = FormPage;
+        }
+        private void CompleteForm_Click3(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Form3(MainWindow, headerClass));
             //Page FormPage = new NewCommission2(MainWindow);
             //this.Content = FormPage;
         }

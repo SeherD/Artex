@@ -20,100 +20,61 @@
                     </ComboBox>
 
                 </StackPanel>
-                <Button Width=" 500" Margin="0,50,0,0">
-                    <Image Source="Images/chart.png"></Image>
-                </Button>
+              
+                    <Image x:Name="Chart" Width=" 500" Margin="0,50,0,0" Source="Images/graph1.png"></Image>
+              
             </StackPanel>
-            <StackPanel Width="639">
-                <FlowDocumentScrollViewer Margin="0,30,0,0">
-                    <FlowDocument>
-                        <Paragraph FontSize="16pt"  FontFamily="Impact" >Art Sold per Month:</Paragraph>
+ 
+        <StackPanel Width=" 639"  >
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                <TextBlock FontSize="25"  FontFamily="Impact" Margin="50,0,30,0">Sales per month:</TextBlock>
+                <ComboBox Width=" 200" FontSize="20">
+                    <ComboBoxItem IsSelected="True">January</ComboBoxItem>
+                    <ComboBoxItem >February</ComboBoxItem>
+                    <ComboBoxItem >March</ComboBoxItem>
+                </ComboBox>
 
-                        <Table>
-                            <TableRowGroup Paragraph.TextAlignment="left">
-                                <TableRow FontWeight="Bold" >
-                                    <TableCell>
-                                        <Paragraph>Date</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Art Piece</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Price</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Buyer</Paragraph>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell>
-                                        <Paragraph>1</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>A Splash of Color</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>30</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>John Smith</Paragraph>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell>
-                                        <Paragraph>5</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Dream Castle</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>30</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Jane Doe</Paragraph>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell>
-                                        <Paragraph>10</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Happiness</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>45</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Mark Smith</Paragraph>
-                                    </TableCell>
-                                </TableRow>
-                                <TableRow>
-                                    <TableCell>
-                                        <Paragraph>21</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>Night Watch</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>50</Paragraph>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Paragraph>John Doe</Paragraph>
-                                    </TableCell>
-                                </TableRow>
-
-                            </TableRowGroup>
-                        </Table>
-                    </FlowDocument>
-                </FlowDocumentScrollViewer>
             </StackPanel>
+
+            <Grid Margin="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Date" FontWeight="Bold" FontFamily="Times New Roman" FontSize="20"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Art Piece" FontWeight="Bold" FontFamily="Times New Roman" FontSize="20" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Price" FontWeight="Bold" FontFamily="Times New Roman" FontSize="20" Grid.Row="0" Grid.Column="2"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Buyer" FontWeight="Bold" FontFamily="Times New Roman" FontSize="20" Grid.Row="0" Grid.Column="3"  VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="1" Grid.Row="1" Grid.Column="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Interesting" Grid.Row="1" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="$20" Grid.Row="1" Grid.Column="2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="John Smith" Grid.Row="1" Grid.Column="3" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="3" Grid.Row="2" Grid.Column="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Colors" Grid.Row="2" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="$40" Grid.Row="2" Grid.Column="2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Jane Doe" Grid.Row="2" Grid.Column="3" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="10" Grid.Row="3" Grid.Column="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Art" Grid.Row="3" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="$60" Grid.Row="3" Grid.Column="2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="Carter James" Grid.Row="3" Grid.Column="3" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock x:Name="a" Text="20" Grid.Row="4" Grid.Column="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed"></TextBlock>
+                    <TextBlock  x:Name="b" Text="Sunset" Grid.Row="4" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed"></TextBlock>
+                    <TextBlock  x:Name="c" Text="$50" Grid.Row="4" Grid.Column="2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed"></TextBlock>
+                    <TextBlock  x:Name="d" Text="Aaron Carr" Grid.Row="4" Grid.Column="3" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" ></TextBlock>
+
+                </Grid>
+         
         </StackPanel>
-        <StackPanel Width=" 200" Margin="865,25,213,475"  Height="40">
-            <ComboBox Width=" 200" FontSize="20">
-                <ComboBoxItem IsSelected="True">January</ComboBoxItem>
-                <ComboBoxItem >February</ComboBoxItem>
-                <ComboBoxItem >March</ComboBoxItem>
-            </ComboBox>
+
         </StackPanel>
     </Grid>
 </Page>

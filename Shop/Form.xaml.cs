@@ -16,11 +16,21 @@ namespace Shop
     /// <summary>
     /// Interaction logic for Form.xaml
     /// </summary>
+    
     public partial class Form : Page
     {
-        public Form()
+        Window MainWindow;
+        MainHeader headerClass;
+        public Form(Window Parent, MainHeader header)
         {
+            MainWindow = Parent;
+            headerClass = header;
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new NewCommission(MainWindow, headerClass, "0000010"));
         }
     }
 }

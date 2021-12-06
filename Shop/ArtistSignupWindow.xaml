@@ -22,9 +22,9 @@
 
 
                 <TextBlock  TextAlignment="Center" FontSize="50"  Margin="10" ><Run Text="Password*:"/></TextBlock>
-                <TextBox Margin="10"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center" Height="50" x:Name="txt_password" TextChanged="txt_password_TextChanged"/>
+                <PasswordBox Margin="10"  FontSize="30" VerticalContentAlignment="Center" Height="50" x:Name="txt_password" />
         <TextBlock  TextAlignment="Center" FontSize="50"  Margin="10"><Run Text="Confirm Password*:"/></TextBlock>
-        <TextBox Margin="10"  FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center" Height="50" x:Name="txt_confirmPassword" TextChanged="txt_confirmPassword_TextChanged"/>
+                <PasswordBox Margin="10"  FontSize="30"  VerticalContentAlignment="Center" Height="50" x:Name="txt_confirmPassword" />
             </StackPanel>
             <StackPanel Margin="70,0,0,0" Width="600">
             <TextBlock  TextAlignment="Center"  FontSize="50"  Margin="10"><Run Text="Name*："/></TextBlock>

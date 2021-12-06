@@ -17,6 +17,9 @@ namespace Shop
     /// </summary>
     public partial class MainHeader : Window
     {
+        public bool saleMade1 = false;
+        public bool saleMade2 = false;
+        public int countCommissions = 0;
         public MainHeader()
         {
             InitializeComponent();
@@ -42,10 +45,9 @@ namespace Shop
         }
         private void Sales_Click(object sender, RoutedEventArgs e)
         {
-           
-             
-            WindowContent.Navigate(new System.Uri("Sales.xaml",
-             UriKind.RelativeOrAbsolute));
+
+
+            WindowContent.Navigate(new Sales(this));
             Heading.Text = "Sales";
             //BrushConverter bc = new BrushConverter();
             // Sales.Background =  (Brush)bc.ConvertFrom("#ffc0c0");
@@ -65,8 +67,9 @@ namespace Shop
 
         private void Commissions_Click(object sender, RoutedEventArgs e)
         {
-            WindowContent.Navigate(new CommissionProgress(this));
+            WindowContent.Navigate(new CommissionProgress(this,this, false,false)) ;
             Heading.Text = "Commissions";
+            Profile.Margin = new Thickness(280, 0, 0, 0);
 
         }
 

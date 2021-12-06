@@ -35,7 +35,7 @@ namespace Artex
         }
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            if (this.txt_userName.Text.ToString() == "123"&& this.txt_password.Text.ToString()=="123")
+            if ((this.txt_userName.Text.ToString() == "123"&& this.txt_password.Password.ToString()=="123") || (this.txt_userName.Text.ToString() == "Artist1" && this.txt_password.Password.ToString() == "45678"))
             {
                 MessageBox.Show("Login successful!!");
                 Window MainApplication = new Shop.MainHeader();

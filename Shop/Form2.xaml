@@ -1,0 +1,24 @@
+﻿<Page x:Class="Shop.Form2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Shop"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1278"
+      Title="Form2">
+
+    <Grid>
+        <StackPanel>
+
+            <TextBlock HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="Please fill out this form and submit:" FontSize="30" FontFamily="Impact" Background="#ffc0c0" VerticalAlignment="Top" Height="37" Width="435"/>
+            <Label Content="Question 1: Briefly describe the piece you want" FontSize="20" FontFamily="Impact" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top"/>
+            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" FontSize="15" TextWrapping="Wrap" Text="Marilyn Monroe splash mixed media art portrait. I plan on printing the piece out on a large white canvas. Must fit in a square. Instead of using red as the main color, please replace this with a dark blue." VerticalAlignment="Top" Width="1113" Height="56" />
+            <Label Content="Question 2: Specify the medium that you want" FontSize="20" FontFamily="Impact" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top"/>
+            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" FontSize="15" TextWrapping="Wrap" Text=" Mixed media art as shown in the URL. Instead of using red as the main color, please replace this with a dark blue." VerticalAlignment="Top" Width="1113" Height="56"/>
+            <Label Content="Question 3: Copy and paste any image URLS of references that relate to your request" FontSize="20" FontFamily="Impact" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top"/>
+            <TextBox FontFamily="Impact" HorizontalAlignment="Left" Margin="10" FontSize="15" TextWrapping="Wrap" Text="https://imgr.search.brave.com/IVHQ7pfJl90-upiO8c139KO4YU2o93wvkXev-UpfHrY/fit/886/354/ce/1/aHR0cDovL2Nkbi4x/MjNtb3ZpZXNzLm5l/dC91cGxvYWQvMjAx/Ny8wNS9tb3ZpZV8x/MDEtZGFsbWF0aWFu/cy0xOTYxLmpwZw" VerticalAlignment="Top" Width="1113" Height="56"/>
+            <Button Content="Return to commissions" FontSize="30"  FontFamily="Impact" Background="#ffc0c0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="50"  Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

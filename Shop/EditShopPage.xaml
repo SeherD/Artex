@@ -9,31 +9,276 @@
       Title="EditShopPage">
 
     <Grid>
-        
-        <StackPanel x:Name="Image1" Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center" Margin="300,0,0,0" >
+        <StackPanel x:Name="ImageHolder"  Orientation="Horizontal" Margin="500,80,0,0" >
+        <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center" >
             <StackPanel Orientation="Horizontal">
                 <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
-                <TextBox x:Name = "TitleA" FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="A Splash of Color" />
+                <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Five Star"  />
             </StackPanel>
+            <Image Margin="0,20, 0,0" Height ="auto" Width="300" Source="/Images/art1.jpg" />
 
-            <Button   Margin="0,20, 0,0" Height ="auto" Width="500" >
-
-                <Image Source="/Images/art1.jpg" />
-
-            </Button>
+          
             <StackPanel Orientation="Horizontal">
                 <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
                 <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$25" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#pencilshading" />
+            </StackPanel>
+                        
+            <StackPanel Orientation="Horizontal">
                 <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
                 <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
             </StackPanel>
         </StackPanel>
+        <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center" Visibility="Collapsed" >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Five Eyes"  />
+            </StackPanel>
+            <Image Margin="0,20, 0,0"  Width="300" Source="/Images/art2.jpg" />
+
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$25" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Collapsed" >
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Neverland"  />
+            </StackPanel>
+            <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art3.jpg" />
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$30" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#watercolors" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Art"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art1.jpg" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$30" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+        <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Color"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art2.jpg" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$70" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+        <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Interesting"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art3.jpg" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$50" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel x:Name="SortedPrice"  Orientation="Horizontal" Margin="500,80,0,0" Visibility="Collapsed">
+            <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Visible" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Color"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art2.jpg" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$70" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Interesting"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art3.jpg" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$50" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Neverland"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art3.jpg" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$30" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#watercolors" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center"  Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Art"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"   Width="300" Source="/Images/art1.jpg" />
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$30" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center" Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Five Star"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0" Height ="auto" Width="300" Source="/Images/art1.jpg" />
+
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$25" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#pencilshading" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="600" Height="550" HorizontalAlignment="Center" Visibility="Collapsed" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="40"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Title:"/></TextBlock>
+                    <TextBox  FontSize="40"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="Five Eyes"  />
+                </StackPanel>
+                <Image Margin="0,20, 0,0"  Width="300" Source="/Images/art2.jpg" />
+
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Price:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="$25" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20"  FontFamily="Impact" Margin="0,0,0,0"><Run Text="Tags:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="#oilpainting" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" FontFamily="Impact" Margin="0,0,0,0"><Run Text="Description:"/></TextBlock>
+                    <TextBox  FontSize="20"  FontFamily="Impact" Foreground="Gray"  HorizontalAlignment="Center" Margin="20,0,0,0" Text="_____" />
+                </StackPanel>
+            </StackPanel>
+           
+           
+         
+        </StackPanel>
+
+
         <StackPanel  x:Name="LefttMenu" Orientation="Vertical" Width="300" HorizontalAlignment="Left"  Background="#ffe6c3" >
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
-                <TextBlock FontSize="20" FontFamily="Impact"  Margin=" 3,0,0,0" ><Run Text="Search"/></TextBlock>
-                <TextBox Width="200" Margin="10,3,0,0"/>
+            <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                <TextBlock FontSize="20" FontFamily="Impact"  Margin="4,4,0,0" ><Run Text="Search Title"/></TextBlock>
+                <TextBox x:Name="SearchBox" FontSize="20"  Margin="4,4,0,0" Width="160" HorizontalAlignment="Left" TextChanged="search"/>
 
             </StackPanel>
 
@@ -41,15 +286,11 @@
                 <TextBlock FontSize="20"  FontFamily="Impact"  Margin=" 3,0,0,0" ><Run Text="Tags:"/></TextBlock>
                 <ScrollViewer  VerticalScrollBarVisibility="Auto" Height="150">
                     <StackPanel Background="#ffe6c3">
-                        <CheckBox FontSize="20" Content="Pencil Shading" />
-                        <CheckBox FontSize="20" Content="Watercolors"/>
-                        <CheckBox FontSize="20" Content="Oil Paints"/>
+                        <CheckBox FontSize="20" Content="PencilShading" Checked="tag1" Unchecked="uncheck" />
+                        <CheckBox FontSize="20" Content="Watercolors"  Checked="tag2" Unchecked="uncheck"/>
+                        <CheckBox FontSize="20" Content="OilPainting"/>
                         <CheckBox FontSize="20" Content="Gouache"/>
-                        <CheckBox FontSize="20" Content="Vibrant"/>
-                        <CheckBox FontSize="20" Content="GreyScale"/>
-                        <CheckBox FontSize="20" Content="Modern"/>
-                        <CheckBox FontSize="20" Content="Portrait"/>
-                        <CheckBox FontSize="20" Content="Still Life"/>
+                        
                     </StackPanel>
                 </ScrollViewer>
 
@@ -58,10 +299,11 @@
                 <TextBlock FontSize="20"  FontFamily="Impact"  Margin=" 3,0,0,0" ><Run Text="Sort By:"/></TextBlock>
                 <ScrollViewer  VerticalScrollBarVisibility="Auto" Height="150">
                     <StackPanel  Background="#ffe6c3" >
-                        <RadioButton FontSize="20" Content="Relevance"/>
+                        
                         <RadioButton FontSize="20" Content="Price (Lowest to Highest)" />
-                        <RadioButton FontSize="20" Content="Price (Highest to Lowest)"/>
+                        <RadioButton FontSize="20" Content="Price (Highest to Lowest)" Checked="sortedPrice" Unchecked="unsortedPrice"/>
                         <RadioButton FontSize="20" Content="Newest Arrivals"/>
+                        <RadioButton FontSize="20" Content="None" Checked="unsortedPrice"/>
                     </StackPanel>
                 </ScrollViewer>
 
@@ -79,24 +321,7 @@
             <Image Source="/Images/left.jpg" />
 
         </Button>
-        <StackPanel Orientation="Vertical" Width="600" Height="600" Margin="442,130,236,-28" Visibility="Hidden" x:Name="Image2" Grid.RowSpan="2">
-            <TextBlock x:Name = "TitleB" FontSize="50"  FontFamily="Impact" HorizontalAlignment="Center" Margin="0,0,0,0" ><Run Text="Eye Spy"/></TextBlock>
-            <Image x:Name="art2" >
-                <Image.Source>
-                    <BitmapImage DecodePixelWidth="200"  UriSource="/Images/art2.jpg" />
-                </Image.Source>
-            </Image>
-            <TextBlock x:Name = "PriceB" FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Right" Margin="0,0,20,0"><Run Text="Price = $30"/></TextBlock>
-        </StackPanel>
-        <StackPanel Orientation="Vertical" Width="600" Height="600" Margin="442,130,236,-28" x:Name="Image3" Visibility="Hidden" Grid.RowSpan="2">
-            <TextBlock x:Name = "TitleC" FontSize="50" FontFamily="Times New Roman" HorizontalAlignment="Center" Margin="0,0,0,0" ><Run Text="Castle of Dreams"/></TextBlock>
-            <Image x:Name="art3" >
-                <Image.Source>
-                    <BitmapImage DecodePixelWidth="200"  UriSource="/Images/art3.jpg" />
-                </Image.Source>
-            </Image>
-            <TextBlock x:Name ="Price" FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Right" Margin="0,0,20,0"><Run Text="Price = $45"/></TextBlock>
-        </StackPanel>
+        
 
        
     </Grid>
