@@ -380,6 +380,17 @@ namespace Shop
                             OilPainting.Visibility = Visibility.Hidden;
                             Watercolors.Visibility = Visibility.Hidden;
 
+                            ListBox content = (ListBox)Default.Content;
+                            foreach (var x in content.Items)
+                            {
+                                if (x.GetType().Name == "ListBoxItem")
+                                {
+                                    ListBoxItem y = (ListBoxItem)x;
+                                    y.Visibility = Visibility.Visible;
+
+                                }
+                            }
+
                         }
                         else if (text.Text == "Oil Paintings")
                         {
@@ -391,6 +402,17 @@ namespace Shop
                             Default.Visibility = Visibility.Hidden;
                             OilPainting.Visibility = Visibility.Hidden;
                             Watercolors.Visibility = Visibility.Visible;
+                        }
+                        else
+                        { ListBox content = (ListBox)Default.Content;
+                            foreach (var x in content.Items)
+                            {
+                               if( x.GetType().Name == "ListBoxItem"){
+                                    ListBoxItem y = (ListBoxItem)x;
+                                    y.Visibility = Visibility.Collapsed;
+
+                                }
+                            }
                         }
                     }
                         
@@ -412,6 +434,7 @@ namespace Shop
         {
             DragBox.Visibility = Visibility.Collapsed;
             FolderScroller.Visibility = Visibility.Visible;
+            DragTarget.Items.Clear();
 
         }
 
