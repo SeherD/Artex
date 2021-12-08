@@ -15,7 +15,8 @@ The first page is the Library:
 
 First feature to try : Search Title
 The search is case sensitive but fully functional, so you can try different phrases and image titles and look at the results. A few sample searches :
-Five will give you two images called Five Star and Five Eyes
+Five will give you two images called Five Star and Five Eyes.
+
 D will give you Dawn, Dusk and Darkness, you can further narrow it down by Da or Daw or Du to get any of the specific images
 
 Next feature to try : Tags
