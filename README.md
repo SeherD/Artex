@@ -43,4 +43,4 @@ If you confirmed, you now have a new folder, you can click on it and it will be 
 If you click on the Watercolors and OilPaintings folders you can see that they have a different collection of images than Default.
 
 Last feature in the Library: Drag and Drop to move multiple images
-You can select multiple images using Ctrl+click and drag them to the name of a folder, after which they will disappear from the Default folder view. Unfortunately, this fucntionality isn't tied in on the other end and you cannot see these chnags reflected if you click on the folder you dropped the images into.
+You can select multiple images using Ctrl+click and drag them to the name of a folder, after which they will disappear from the Default folder view. Unfortunately, this fucntionality isn't tied in on the other end and you cannot see these changes reflected if you click on the folder you dropped the images into.
