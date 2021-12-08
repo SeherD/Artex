@@ -5,62 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shop"
         mc:Ignorable="d"
-        Title="Window1" Height="550" Width="1278">
+        Title="File Browser" Height="450" Width="800">
     <Grid>
-        <StackPanel  x:Name="UploadImageBase" Orientation="Vertical" Width="1278" HorizontalAlignment="Left"  Background="#ffe6c3" Grid.ColumnSpan="2" >
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,0"/>
-            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
-            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
+        <StackPanel  x:Name="UploadImageBase" Orientation="Vertical" Width="800" HorizontalAlignment="Left"  Background="#ffe6c3" Grid.ColumnSpan="2"/>
+
+
+        <StackPanel  x:Name="FauxMenu" Orientation="Vertical" Width="800" Height ="450" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,0,0,0"  >
+            <StackPanel Background="#3d9e00" Height="45"> </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="20,0,0,0" Height="300">
+                <StackPanel Orientation="Vertical" Margin="0,20,0,0">
+                    <TextBlock  FontSize="30" FontFamily="Calibri" Width="185" Text=" This PC"/>
+                    <TextBlock  FontSize="30" FontFamily="Calibri" Width="184" Text=" &gt;Pictures" Foreground="Black" Background="#FFCDAA96"/>
+                </StackPanel>
+                <StackPanel>
+                    <ScrollViewer  VerticalScrollBarVisibility="Visible" Width="550" >
+                        <ListBox  x:Name="FileHolder" SelectionMode="Extended" Background="Transparent" Width="650" MouseMove="List_MouseMove" MouseDown="List_MouseDown" Height="246" SelectionChanged="ListBox_SelectionChanged">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid  Rows="10" Columns="5" />
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="Margin" Value="15"/>
+
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/monet.jpg" Height="80"/>
+                                    <TextBlock FontSize="15" Text="monet.jpeg"/>
+
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/magritte.jpg" Height="80"/>
+                                    <TextBlock FontSize="15" Text="magritte.jpeg"/>
+
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <Image Source="/Images/murakami.png" Height="80"/>
+                                    <TextBlock FontSize="15" Text="murakami.jpeg"/>
+
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                    </ScrollViewer>
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  >
+                <Button Content="Add to Library" FontSize="25" Margin="450,20,0,0" Click="Add_Click" Background="LightGreen"/>
+                <Button Content="Cancel" FontSize="25"   Margin="80,20,0,0" Click="NotAdd_Click" Background="IndianRed"/>
+            </StackPanel>
+           
+           
+            
         </StackPanel>
 
-        <StackPanel  x:Name="FauxMenu" Orientation="Vertical" Width="1278" HorizontalAlignment="Left"  Background="#3d9e00" Margin="0,0,0,505" Grid.ColumnSpan="2" >
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,0"/>
-            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
-            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
-        </StackPanel>
 
+       
 
-        <StackPanel Orientation="Vertical" Margin="56,100,1011,55" Grid.ColumnSpan="2">
-            <TextBlock  FontSize="30" FontFamily="Calibri" Width="185" Text=" This PC"/>
-            <TextBlock  FontSize="30" FontFamily="Calibri" Width="184" Text=" &gt;Pictures" Foreground="Black" Background="#FFCDAA96"/>
-        </StackPanel>
-
-        <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="272,125,109,178">
-            <ListBox  SelectionMode="Extended" Background="Transparent" Width="902" MouseMove="List_MouseMove" MouseDown="List_MouseDown" Height="246" SelectionChanged="ListBox_SelectionChanged">
-                <ListBox.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <UniformGrid  Rows="10" Columns="5" />
-                    </ItemsPanelTemplate>
-                </ListBox.ItemsPanel>
-                <ListBox.ItemContainerStyle>
-                    <Style TargetType="ListBoxItem">
-                        <Setter Property="Margin" Value="15"/>
-
-                    </Style>
-                </ListBox.ItemContainerStyle>
-                <ListBoxItem>
-                    <StackPanel>
-                        <Image Source="/Images/monet.jpg" Height="80"/>
-                        <TextBlock FontSize="15" Text="monet.jpeg"/>
-
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem>
-                    <StackPanel>
-                        <Image Source="/Images/magritte.jpg" Height="80"/>
-                        <TextBlock FontSize="15" Text="magritte.jpeg"/>
-
-                    </StackPanel>
-                </ListBoxItem>
-                <ListBoxItem>
-                    <StackPanel>
-                        <Image Source="/Images/murakami.png" Height="80"/>
-                        <TextBlock FontSize="15" Text="murakami.jpeg"/>
-
-                    </StackPanel>
-                </ListBoxItem>
-            </ListBox>
-        </ScrollViewer>
+     
 
         <StackPanel x:Name="DragBox" Visibility="Hidden">
             <TextBlock  FontSize="20" FontFamily="Impact"  Margin=" 10,0,0,0" ><Run Text="Drag your images here to add to the Shop:"/></TextBlock>
@@ -80,6 +89,6 @@
         </StackPanel>
         
         
-        <Button Content="Confirm" FontSize="20" Margin="860,421,109,74" RenderTransformOrigin="0.491,0.558" Grid.Column="1" Click="Button_Click"/>
+        
     </Grid>
 </Window>

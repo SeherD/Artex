@@ -27,6 +27,15 @@ namespace Shop
             DialogResult = true;
         }
 
+        private void Add_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            DialogResult = true;
+        }
+
+        private void NotAdd_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            DialogResult = false ;
+        }
         private void CancelButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             DialogResult = false;

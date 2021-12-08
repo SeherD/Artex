@@ -77,35 +77,35 @@
                                 <StackPanel>
                                     <Image Source="/Images/art1.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Five Star</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #pencilshading</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #pencilshading</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-                            <ListBoxItem>
-                                <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
+                            <ListBoxItem MouseDoubleClick="EditImage">
+                                <StackPanel >
+                                    <Image Source="/Images/art2.jpg" Height="80" />
                                     <TextBlock FontSize="15">Title: Five Eyes</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art3.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Neverland</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #watercolors</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #watercolors</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art1.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Art </TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Color</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
 
@@ -113,140 +113,140 @@
                                 <StackPanel>
                                     <Image Source="/Images/art3.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Interesting</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Eyes</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Dusk</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Dawn</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Sunset</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Sparkles</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Open Fields</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Sheep</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Birds</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Puppies</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Cartoons</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Flowers</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: Darkness</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title: </TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                             <ListBoxItem>
                                 <StackPanel>
                                     <Image Source="/Images/art2.jpg" Height="80"/>
                                     <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-                            <ListBoxItem>
+                            <ListBoxItem x:Name="magritte" MouseDoubleClick="EditImage" Visibility="Collapsed">
                                 <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <Image Source="/Images/magritte.jpg" Height="80"/>
+                                    <TextBlock x:Name="magritteTitle" FontSize="15">Title: magritte</TextBlock>
+                                    <TextBlock x:Name="magritteTag" FontSize="15">Tag: None</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-                            <ListBoxItem>
+                            <ListBoxItem  x:Name="monet" Visibility="Collapsed">
                                 <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <Image Source="/Images/monet.jpg" Height="80"/>
+                                    <TextBlock FontSize="15">Title: monet</TextBlock>
+                                    <TextBlock FontSize="15">Tag: None</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-                            <ListBoxItem>
+                            <ListBoxItem  x:Name="murakami" Visibility="Collapsed">
                                 <StackPanel>
-                                    <Image Source="/Images/art2.jpg" Height="80"/>
-                                    <TextBlock FontSize="15">Title</TextBlock>
-                                    <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                                    <Image Source="/Images/murakami.png" Height="80"/>
+                                    <TextBlock FontSize="15">Title: murakami</TextBlock>
+                                    <TextBlock FontSize="15">Tag: None</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
                         </ListBox>
@@ -358,35 +358,35 @@
                     <StackPanel>
                         <Image Source="/Images/art1.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title: hello</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art3.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art1.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
 
@@ -394,28 +394,28 @@
                     <StackPanel>
                         <Image Source="/Images/art3.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
 
@@ -424,14 +424,14 @@
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
             </ListBox>
@@ -455,35 +455,35 @@
                     <StackPanel>
                         <Image Source="/Images/art1.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title: watercolor land</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art3.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art1.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
 
@@ -491,14 +491,14 @@
                     <StackPanel>
                         <Image Source="/Images/art3.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
                 <ListBoxItem>
                     <StackPanel>
                         <Image Source="/Images/art2.jpg" Height="80"/>
                         <TextBlock FontSize="15">Title</TextBlock>
-                        <TextBlock FontSize="15">Tags: #oilpainting</TextBlock>
+                        <TextBlock FontSize="15">Tag: #oilpainting</TextBlock>
                     </StackPanel>
                 </ListBoxItem>
             </ListBox>

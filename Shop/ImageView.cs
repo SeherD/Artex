@@ -143,14 +143,29 @@ namespace Shop
             var myFileSys = new Window1();
             if (myFileSys.ShowDialog() == true)
             {
-                
+                magritte.Visibility = Visibility.Visible;
+                monet.Visibility = Visibility.Visible;
+                murakami.Visibility = Visibility.Visible;
             }
             else return;
 
 
         }
         //==================================================================================
-
+       private void EditImage(object sender, RoutedEventArgs e)
+        {
+            
+            var dialog = new EditImage("magritte","/Images/magritte.jpg","None");
+            if (dialog.ShowDialog() == true)
+            {
+                magritteTitle.Text = "Title: "+dialog.newTitle;
+                magritteTag.Text = "Tag: " + dialog.newTag;
+            }
+            else
+            {
+                return;
+            }
+        }
 
         private void AddNewFolder(object sender, RoutedEventArgs e)
         {
@@ -215,7 +230,7 @@ namespace Shop
                                         if (text.GetType().Name == "TextBlock")
                                         {
                                             TextBlock textHolder = (TextBlock)text;
-                                            if (textHolder.Text.Contains("Tags: #" + checkbox.Content.ToString().ToLower()))
+                                            if (textHolder.Text.Contains("Tag: #" + checkbox.Content.ToString().ToLower()))
                                             {
                                                 checkItems.Add(list);
 
@@ -304,7 +319,7 @@ namespace Shop
                                         if (text.GetType().Name == "TextBlock")
                                         {
                                             TextBlock textHolder = (TextBlock)text;
-                                            if (textHolder.Text.Contains("Tags: #" + checkbox.Content.ToString().ToLower()))
+                                            if (textHolder.Text.Contains("Tag: #" + checkbox.Content.ToString().ToLower()))
                                             { if (checkItems.Contains(list))
                                                 checkItems.Remove(list);
 
