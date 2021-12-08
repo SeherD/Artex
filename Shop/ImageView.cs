@@ -91,10 +91,6 @@ namespace Shop
                 }*/
                 _targetSource.Items.Remove(data);
             }
-
-
-
-
         }
 
         private void shop_Drop(object sender, DragEventArgs e)
@@ -138,6 +134,39 @@ namespace Shop
 
 
         }
+
+
+        //NEW==============================================================================
+        private void UploadImages(object sender, RoutedEventArgs e)
+        {
+            string fileName = null;
+            var myFileSys = new Window1();
+            if (myFileSys.ShowDialog() == true)
+            {
+                magritte.Visibility = Visibility.Visible;
+                monet.Visibility = Visibility.Visible;
+                murakami.Visibility = Visibility.Visible;
+            }
+            else return;
+
+
+        }
+        //==================================================================================
+       private void EditImage(object sender, RoutedEventArgs e)
+        {
+            
+            var dialog = new EditImage("magritte","/Images/magritte.jpg","None");
+            if (dialog.ShowDialog() == true)
+            {
+                magritteTitle.Text = "Title: "+dialog.newTitle;
+                magritteTag.Text = "Tag: " + dialog.newTag;
+            }
+            else
+            {
+                return;
+            }
+        }
+
         private void AddNewFolder(object sender, RoutedEventArgs e)
         {
             string folderName="New Folder";
@@ -175,6 +204,8 @@ namespace Shop
            
 
         }
+
+      
         List<ListBoxItem> checkItems = new List<ListBoxItem>();
 
         private void checkboxIsChecked(object sender, RoutedEventArgs e)
@@ -199,7 +230,7 @@ namespace Shop
                                         if (text.GetType().Name == "TextBlock")
                                         {
                                             TextBlock textHolder = (TextBlock)text;
-                                            if (textHolder.Text.Contains("Tags: #" + checkbox.Content.ToString().ToLower()))
+                                            if (textHolder.Text.Contains("Tag: #" + checkbox.Content.ToString().ToLower()))
                                             {
                                                 checkItems.Add(list);
 
@@ -288,7 +319,7 @@ namespace Shop
                                         if (text.GetType().Name == "TextBlock")
                                         {
                                             TextBlock textHolder = (TextBlock)text;
-                                            if (textHolder.Text.Contains("Tags: #" + checkbox.Content.ToString().ToLower()))
+                                            if (textHolder.Text.Contains("Tag: #" + checkbox.Content.ToString().ToLower()))
                                             { if (checkItems.Contains(list))
                                                 checkItems.Remove(list);
 
@@ -380,17 +411,6 @@ namespace Shop
                             OilPainting.Visibility = Visibility.Hidden;
                             Watercolors.Visibility = Visibility.Hidden;
 
-                            ListBox content = (ListBox)Default.Content;
-                            foreach (var x in content.Items)
-                            {
-                                if (x.GetType().Name == "ListBoxItem")
-                                {
-                                    ListBoxItem y = (ListBoxItem)x;
-                                    y.Visibility = Visibility.Visible;
-
-                                }
-                            }
-
                         }
                         else if (text.Text == "Oil Paintings")
                         {
@@ -402,17 +422,6 @@ namespace Shop
                             Default.Visibility = Visibility.Hidden;
                             OilPainting.Visibility = Visibility.Hidden;
                             Watercolors.Visibility = Visibility.Visible;
-                        }
-                        else
-                        { ListBox content = (ListBox)Default.Content;
-                            foreach (var x in content.Items)
-                            {
-                               if( x.GetType().Name == "ListBoxItem"){
-                                    ListBoxItem y = (ListBoxItem)x;
-                                    y.Visibility = Visibility.Collapsed;
-
-                                }
-                            }
                         }
                     }
                         
@@ -434,7 +443,6 @@ namespace Shop
         {
             DragBox.Visibility = Visibility.Collapsed;
             FolderScroller.Visibility = Visibility.Visible;
-            DragTarget.Items.Clear();
 
         }
 

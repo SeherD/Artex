@@ -16,7 +16,10 @@
     <None Remove="Images\graph1.png" />
     <None Remove="Images\graph2.png" />
     <None Remove="Images\left.jpg" />
+    <None Remove="Images\magritte.jpg" />
     <None Remove="Images\menu.png" />
+    <None Remove="Images\monet.jpg" />
+    <None Remove="Images\murakami.png" />
     <None Remove="Images\plus.png" />
     <None Remove="Images\profile.png" />
     <None Remove="Images\right.jpg" />
@@ -51,7 +54,16 @@
     <Resource Include="Images\left.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\magritte.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\monet.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\murakami.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\plus.png">
