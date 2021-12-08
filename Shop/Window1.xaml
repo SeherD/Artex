@@ -1,0 +1,85 @@
+﻿<Window x:Class="Shop.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Shop"
+        mc:Ignorable="d"
+        Title="Window1" Height="550" Width="1278">
+    <Grid>
+        <StackPanel  x:Name="UploadImageBase" Orientation="Vertical" Width="1278" HorizontalAlignment="Left"  Background="#ffe6c3" Grid.ColumnSpan="2" >
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,0"/>
+            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
+            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
+        </StackPanel>
+
+        <StackPanel  x:Name="FauxMenu" Orientation="Vertical" Width="1278" HorizontalAlignment="Left"  Background="#3d9e00" Margin="0,0,0,505" Grid.ColumnSpan="2" >
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,0"/>
+            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
+            <StackPanel Orientation="Vertical" Margin="0,20,0,0"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Vertical" Margin="56,100,1011,55" Grid.ColumnSpan="2">
+            <TextBlock  FontSize="30" FontFamily="Calibri" Width="185" Text=" This PC"/>
+            <TextBlock  FontSize="30" FontFamily="Calibri" Width="184" Text=" &gt;Pictures" Foreground="Black" Background="#FFCDAA96"/>
+        </StackPanel>
+
+        <ScrollViewer  VerticalScrollBarVisibility="Auto" Margin="272,125,109,178">
+            <ListBox  SelectionMode="Extended" Background="Transparent" Width="902" MouseMove="List_MouseMove" MouseDown="List_MouseDown" Height="246" SelectionChanged="ListBox_SelectionChanged">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid  Rows="10" Columns="5" />
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="Margin" Value="15"/>
+
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBoxItem>
+                    <StackPanel>
+                        <Image Source="/Images/monet.jpg" Height="80"/>
+                        <TextBlock FontSize="15" Text="monet.jpeg"/>
+
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel>
+                        <Image Source="/Images/magritte.jpg" Height="80"/>
+                        <TextBlock FontSize="15" Text="magritte.jpeg"/>
+
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel>
+                        <Image Source="/Images/murakami.png" Height="80"/>
+                        <TextBlock FontSize="15" Text="murakami.jpeg"/>
+
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+        </ScrollViewer>
+
+        <StackPanel x:Name="DragBox" Visibility="Hidden">
+            <TextBlock  FontSize="20" FontFamily="Impact"  Margin=" 10,0,0,0" ><Run Text="Drag your images here to add to the Shop:"/></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <ListBox Margin="10,0,0,0" x:Name="DragTarget" Height="130" Width="800" BorderBrush="Green" BorderThickness="2" AllowDrop="True" Drop="shop_Drop">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <UniformGrid  Rows="5" Columns="4" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
+                <Button Content="Confirm" Margin="20" FontFamily="impact" FontSize="20" Height="30" Background="LightGreen" Click="Confirm_Click"/>
+                <Button Content="Cancel" Margin="20" Height="30" FontFamily="impact" FontSize="20" Background="IndianRed" Click="Cancel_Click"/>
+
+
+            </StackPanel>
+        </StackPanel>
+        
+        
+        <Button Content="Confirm" FontSize="20" Margin="860,421,109,74" RenderTransformOrigin="0.491,0.558" Grid.Column="1" Click="Button_Click"/>
+    </Grid>
+</Window>
