@@ -1,6 +1,7 @@
 # Artex
 Welcome to Artex!
-Contributors: Kiley Carson, Mackenzie Dalton, Ezra John Guia, Xiangyu Liu, Seher Dawar
+Contributors: Kiley Carson, Mackenzie Dalton, Ezra John Guia, Xiangyu Liu, Seher Dawar.
+
 This is your instruction guide to experiencing the best features of Artex.
 After downloading this zip, you must run the solution.
 The first page that you will encounter will be the Landing Page.
