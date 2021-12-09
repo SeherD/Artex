@@ -1,5 +1,6 @@
 # Artex
 Welcome to Artex!
+
 Contributors: Kiley Carson, Mackenzie Dalton, Ezra John Guia, Xiangyu Liu, Seher Dawar.
 
 This is your instruction guide to experiencing the best features of Artex.
