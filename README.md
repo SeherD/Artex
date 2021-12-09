@@ -45,3 +45,45 @@ If you click on the Watercolors and OilPaintings folders you can see that they h
 
 Last feature in the Library: Drag and Drop to move multiple images
 You can select multiple images using Ctrl+click and drag them to the name of a folder, after which they will disappear from the Default folder view. Unfortunately, this fucntionality isn't tied in on the other end and you cannot see these changes reflected if you click on the folder you dropped the images into.
+
+
+
+The next page is the Commissions:
+
+First feature to try : Search 
+You can type any of these characters 9 or W or I or 8 or S or J and see the search results.
+
+Next feature to try : View Completed Form
+You can click on the view completed form button for the first three entries to see their attached forms.
+
+Next feature to try : Add Commission
+Click on the Add Commission button.
+On the Add Commission page, Click on Attach a Form and fill it in using some words. Then submit the form.
+Now you can add in the client name, James Carr and set price to a number of your choosing. Payment received should be set to No.
+Now click on Submit, you can see this entry in the list of commissions.
+
+
+The next page is the Sales:
+You can observe the entries for January. If you went back to Commissions and set the Commission status of the first entry (Aaron Carr) to Sold, and came back to Sales, you can see a new entry and an updated graph.
+The dropdowns have not been tied into new data for different months due to scarcity of time.
+
+The last page is Edit Shop:
+
+First feature to try : Search Title
+You can try these queries: Five Star and Color.
+The image should pop to the top.
+
+The next feature to try : Tags
+If you click on the Watercolors tag then the one image that corresponds to the tag will be displayed.
+
+The next feature to try : Sort
+Try sorting by Price High to Low with all tags unchecked. When you go click through the pictures, you will notice they are now in decending order by price.
+You can set the Sort to None to restore the order.
+
+The next feature to try : Edit Image
+You can edit the price, title, tags and description of the image as you see fit.
+
+Once you are done going through our application, you can click on the Logout button to safely leave the app.
+
+
+
