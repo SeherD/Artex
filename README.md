@@ -7,7 +7,9 @@ After downloading this zip, you must run the solution.
 The first page that you will encounter will be the Landing Page.
 Here you have two options:
 You can Login using the credentials Username: 123 and Password: 123.
+
 If you would like to sign up for an account, you should choose the Artist Account since the Viewer Account is outside the scope of this project.
+
 To sign up with an Artist Account use the following credentials Username: Artist1 and Password: 45678. The rest of the fields can be filled in however you want.
 On successful sign up, you will be taken to the Login page where you can login with the credentials you signed up with: Username: Artist1 and Password: 45678.
 On successful login, you have now reached the main application:
